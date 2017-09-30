@@ -945,8 +945,6 @@ vendor/lib/libAlacSwDec.so
 vendor/lib/libApeSwDec.so
 vendor/lib/libdsd2pcm.so
 vendor/lib/libFlacSwDec.so
-vendor/lib/libI420colorconvert.so
-vendor/lib/libmm-color-convertor.so
 vendor/lib/libmmosal.so
 vendor/lib/libMpeg4SwEncoder.so
 vendor/lib/libmulawdec.so
@@ -970,8 +968,6 @@ vendor/lib/libstagefright_soft_qtiflacdec.so
 vendor/lib64/libAlacSwDec.so
 vendor/lib64/libApeSwDec.so
 vendor/lib64/libFlacSwDec.so
-vendor/lib64/libI420colorconvert.so
-vendor/lib64/libmm-color-convertor.so
 vendor/lib64/libmmosal.so
 vendor/lib64/libMpeg4SwEncoder.so
 vendor/lib64/libmulawdec.so
