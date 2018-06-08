@@ -366,20 +366,14 @@ PRODUCT_PACKAGES += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.class_main.sh \
-    init.crda.sh \
     init.mdm.sh \
     init.pnx.lcm.sh \
-    init.qcom.class_core.sh \
-    init.qcom.coex.sh \
     init.qcom.early_boot.sh \
-    init.qcom.efs.sync.sh \
     init.qcom.post_boot.sh \
-    init.qcom.sdio.sh \
     init.qcom.sensors.sh \
     init.qcom.sh \
     init.qcom.usb.sh \
     init.sensor.e2pwrite.sh \
-    qca6234-service.sh \
     init.fingerprint.et520.rc \
     init.fingerprint.gf3258.rc \
     init.msm.usb.configfs.rc \
