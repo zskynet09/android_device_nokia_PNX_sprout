@@ -1353,8 +1353,6 @@ vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so
 # QMI (Qualcomm MSM Interface)
 system_ext/etc/permissions/qti_libpermissions.xml
 system_ext/etc/permissions/qti_permissions.xml
-system_ext/etc/permissions/qti_telephony_hidl_wrapper.xml
-system_ext/etc/permissions/qti_telephony_utils.xml
 vendor/bin/irsc_util
 vendor/etc/sec_config
 vendor/etc/seccomp_policy/qti-systemd.policy
