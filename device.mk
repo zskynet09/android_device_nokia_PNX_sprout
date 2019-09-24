@@ -20,7 +20,8 @@ AB_OTA_POSTINSTALL_CONFIG += \
     POSTINSTALL_OPTIONAL_system=true
 
 PRODUCT_PACKAGES += \
-    otapreopt_script
+    otapreopt_script \
+    cppreopts.sh
 
 # Common init scripts
 PRODUCT_PACKAGES += \
