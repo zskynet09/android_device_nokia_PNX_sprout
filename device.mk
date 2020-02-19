@@ -108,6 +108,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     telephony-ext
 
+# Treble
+PRODUCT_USE_VNDK_OVERRIDE := true
+
 # Update engine
 PRODUCT_PACKAGES += \
     update_engine \
