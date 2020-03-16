@@ -294,6 +294,9 @@
     <!-- True if the firmware supports connected MAC randomization -->
     <bool translatable="false" name="config_wifi_connected_mac_randomization_supported">true</bool>
 
+    <!-- True if the firmware supports p2p MAC randomization -->
+    <bool translatable="false" name="config_wifi_p2p_mac_randomization_supported">true</bool>
+
     <!-- Boolean indicating if restoring network selection should be skipped -->
     <!-- The restoring is handled by modem if it is true-->
     <bool translatable="false" name="skip_restoring_network_selection">true</bool>
