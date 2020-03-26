@@ -227,7 +227,8 @@ if [ -d /config/usb_gadget ]; then
 				product_string="$machine_type-$soc_hwplatform _SN:$msm_serial_hex"
 			fi
 	fi
-	echo "$product_string" > /config/usb_gadget/g1/strings/0x409/product
+	
+	setprop vendor.usb.product_string "$product_string"
 
 	# ADB requires valid iSerialNumber; if ro.serialno is missing, use dummy
 	serialnumber=`cat /config/usb_gadget/g1/strings/0x409/serialnumber` 2> /dev/null
