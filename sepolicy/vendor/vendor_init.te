@@ -3,3 +3,6 @@ allow vendor_init goodix_vendor_data_file:dir getattr;
 
 # Allow setting fingerprint props
 set_prop(vendor_init, vendor_fp_prop)
+
+# adsprpcd
+allow init adsprpcd_file:file mounton;

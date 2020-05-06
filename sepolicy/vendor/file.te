@@ -7,6 +7,9 @@ type proc_bandinfo, proc_type, fs_type;
 # ADSP
 type sysfs_fih, sysfs_type, fs_type;
 
+# Adsprpcd
+type public_adsprpcd_file, file_type;
+
 # Fingerprint
 type goodix_vendor_data_file, file_type, data_file_type;
 type sysfs_ets, sysfs_type, fs_type;
