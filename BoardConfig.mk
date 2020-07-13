@@ -1,5 +1,4 @@
 DEVICE_PATH := device/nokia/PNX_sprout
-BOARD_VENDOR := nokia
 
 # Architecture
 TARGET_ARCH := arm64
