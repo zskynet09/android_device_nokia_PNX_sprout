@@ -2244,8 +2244,6 @@ system_ext/lib64/libvndfwk_detect_jni.qti.so
 vendor/lib/libavservices_minijail.so
 vendor/lib/libdisplayconfig.qti.so
 vendor/lib/libgralloc.qti.so
-vendor/lib/libhidltransport.so
-vendor/lib/libhwbinder.so
 vendor/lib/libprotobuf-cpp-full-3.9.1.so
 vendor/lib/libprotobuf-cpp-lite-3.9.1.so
 vendor/lib/libqti_vndfwk_detect.so
@@ -2254,8 +2252,6 @@ vendor/lib/libwifi-hal-ctrl.so
 vendor/lib64/libavservices_minijail.so
 vendor/lib64/libdisplayconfig.qti.so
 vendor/lib64/libgralloc.qti.so
-vendor/lib64/libhidltransport.so
-vendor/lib64/libhwbinder.so
 vendor/lib64/libprotobuf-cpp-full-3.9.1.so
 vendor/lib64/libprotobuf-cpp-lite-3.9.1.so
 vendor/lib64/libprotobuf-cpp-lite.so
