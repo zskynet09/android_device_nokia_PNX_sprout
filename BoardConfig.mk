@@ -81,3 +81,6 @@ TARGET_NO_RECOVERY := true
 BOARD_USES_RECOVERY_AS_BOOT := true
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_RECOVERY_FSTAB := device/nokia/Phoenix/rootdir/etc/recovery.fstab
+
+# Sepolicy
+include device/qcom/sepolicy/SEPolicy.mk
