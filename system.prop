@@ -23,6 +23,9 @@ persist.vendor.cne.feature=1
 persist.vendor.data.profile_update=true
 persist.vendor.data.mode=concurrent
 
+# Dalvik dex2oat
+dalvik.vm.dex2oat64.enabled=true
+
 # GPS
 persist.vendor.overlay.izat.optin=rro
 persist.backup.ntpServer="0.pool.ntp.org"
