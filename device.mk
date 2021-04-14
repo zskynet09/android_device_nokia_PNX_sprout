@@ -331,6 +331,7 @@ PRODUCT_COPY_FILES += \
 
 # Radio
 PRODUCT_PACKAGES += \
+    CarrierConfigOverlay \
     libjson \
     libprotobuf-cpp-full \
     librmnetctl \
