@@ -160,6 +160,7 @@ on charger
     setprop persist.sys.usb.config mass_storage
     start qcom-post-boot
 
+    start vendor.hvdcp_opti
     setprop sys.usb.configfs 1
 
 service spdaemon /vendor/bin/spdaemon
@@ -206,6 +207,11 @@ service hbtp /system/vendor/bin/hbtp_daemon
      user system
      group system
      disabled
+
+service vendor.hvdcp_opti /vendor/bin/hvdcp_opti
+    class main
+    user root
+    group system wakelock
 
 service energy-awareness /system/vendor/bin/energy-awareness
     class main
