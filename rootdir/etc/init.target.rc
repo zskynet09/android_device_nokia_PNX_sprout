@@ -165,6 +165,7 @@ on property:init.svc.vendor.charger=running
     write /sys/devices/system/cpu/cpu7/online 0
     wait /dev/block/bootdevice
 
+    start vendor.hvdcp_opti
     setprop sys.usb.configfs 1
 
 service spdaemon /vendor/bin/spdaemon
@@ -205,6 +206,11 @@ on property:init.svc.vendor.hwcomposer-2-3=running
 
 on property:init.svc.vendor.hwcomposer-2-3=restarting
     stop ppd
+
+service vendor.hvdcp_opti /vendor/bin/hvdcp_opti
+    class main
+    user root
+    group system wakelock
 
 service energy-awareness /system/vendor/bin/energy-awareness
     class main
