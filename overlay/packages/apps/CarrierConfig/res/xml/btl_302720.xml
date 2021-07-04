@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<carrier_config_list>
+    <carrier_config>
+        <boolean name="carrier_name_override_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <int name="wfc_spn_format_idx_int" value="1" />
+        <string name="wfc_emergency_address_carrier_app_string">com.google.android.wfcactivation/.WfcActivationCanadaActivity</string>
+    </carrier_config>
+</carrier_config_list>
