@@ -1,0 +1,107 @@
+#
+# system.prop for PNX
+#
+
+# Bluetooth
+ro.bluetooth.library_name=libbluetooth_qti.so
+persist.vendor.btstack.aac_frm_ctl.enabled=true
+
+# Camera
+persist.camera.awbdefine=1
+persist.camera.debug_img_exif=1
+persist.camera.expose.aux=1
+persist.vendor.camera.privapp.list=com.android.cts.verifier,com.hmdglobal.camera2
+vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.hmdglobal.camera2
+
+# CNE
+persist.vendor.cne.feature=1
+
+# Data modules
+persist.vendor.data.profile_update=true
+persist.vendor.data.mode=concurrent
+
+# GPS
+persist.vendor.overlay.izat.optin=rro
+persist.backup.ntpServer="0.pool.ntp.org"
+
+# Graphics
+debug.sf.disable_backpressure=1
+debug.sf.enable_hwc_vds=1
+debug.sf.latch_unsignaled=1
+dev.pm.dyn_samplingrate=1
+persist.sys.force_sw_gles=1
+
+# IMS
+persist.ims.enableADBLogs=1
+persist.ims.enableDebugLogs=1
+persist.data.iwlan.enable=true
+
+# Logging
+ro.logd.kernel=true
+
+# Media
+qcom.hw.aac.encoder=true
+debug.stagefright.ccodec=1
+media.stagefright.enable-player=true
+media.stagefright.enable-http=true
+media.stagefright.enable-aac=true
+media.stagefright.enable-qcp=true
+media.stagefright.enable-fma2dp=true
+media.stagefright.enable-scan=true
+media.stagefright.thumbnail.prefer_hw_codecs=true
+mmp.enable.3g2=true
+media.aac_51_output_enabled=true
+mm.enable.smoothstreaming=true
+media.settings.xml=/vendor/etc/media_profiles_vendor.xml
+persist.mm.enable.prefetch=true
+ro.media.recorder-max-base-layer-fps = 60
+
+# Navigation
+qemu.hw.mainkeys=0
+
+# Netflix
+ro.netflix.bsp_rev=Q670-14477-1
+
+# QC framework value-adds
+ro.vendor.qti.va_aosp.support=1
+
+# Radio
+DEVICE_PROVISIONED=1
+persist.data.tcp_rst_drop=true
+persist.env.fastdorm.enabled=true
+persist.radio.adb_log_on=3
+persist.radio.flexmap_type=nw_mode
+persist.radio.oem_socket=true
+persist.radio.qcom_ext_enable=true
+persist.vendor.radio.custom_ecc=1
+persist.vendor.radio.data_con_rprt=1
+persist.vendor.radio.lte_vrte_ltd=1
+persist.vendor.radio.oem_socket=true
+ril.subscription.types=NV,RUIM
+ro.telephony.default_network=22
+ro.telephony.default_network=33,33
+telephony.lteOnCdmaDevice=1
+
+# Rmnet data
+persist.rmnet.data.enable=true
+persist.data.wda.enable=true
+persist.data.df.dl_mode=5
+persist.data.df.ul_mode=5
+persist.data.df.agg.dl_pkt=10
+persist.data.df.agg.dl_size=4096
+persist.data.df.mux_count=8
+persist.data.df.iwlan_mux=9
+persist.data.df.dev_name=rmnet_usb0
+
+# SDCard
+persist.fuse_sdcard=true
+
+# Sensors
+persist.vendor.sensors.enable.mag_filter=true
+
+# Voice assistant
+ro.opa.device_model_id=camera-880e6-nokia-8.1-rg4bqo
+
+# WFD
+persist.debug.wfd.enable=1
+persist.sys.wfd.virtual=0
