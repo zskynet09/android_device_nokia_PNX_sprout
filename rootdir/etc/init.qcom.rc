@@ -25,15 +25,9 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
-import /vendor/etc/init/hw/init.qti.ufs.rc
 import /vendor/etc/init/hw/init.qcom.usb.rc
-import /vendor/etc/init/hw/init.qcom.test.rc
 import /vendor/etc/init/hw/init.target.rc
-import /vendor/etc/init/hw/init.qcom.factory.rc
-
-# FIH: load fih rc {
-import /vendor/etc/init/hw/init.qcom.target.rc
-# FIH: load fih rc }
+import /vendor/etc/init/hw/init.pnx.target.rc
 
 on early-init
     mount debugfs debugfs /sys/kernel/debug
@@ -90,7 +84,6 @@ on early-boot
     write /sys/devices/virtual/npu/msm_npu/boot 1
     write /sys/devices/virtual/cvp/cvp/boot 1
     exec u:r:vendor_qti_init_shell:s0 -- /vendor/bin/init.qcom.early_boot.sh
-    exec u:r:vendor_qti_init_shell:s0 -- /vendor/bin/init.qti.can.sh
     setprop ro.sf.lcd_density ${vendor.display.lcd_density}
 
     chown system system /mnt/vendor/persist/data/pfm/licenses
@@ -694,18 +687,11 @@ on property:drmdiag.load=1
 on property:drmdiag.load=0
     stop drmdiag
 
-#+FIH@R3J168: FEATURE_FIH_C_NOKIA_001 (8998), by Pupu
 service qcom-sh /vendor/bin/init.qcom.sh
     class late_start
     user root
     group root system radio oem_2903 oem_2904 vendor_rfs
     oneshot
-#-FIH@R3J168: FEATURE_FIH_C_NOKIA_001 (8998), by Pupu
-# Remove since is deprecated but throws AVC denial.
-# service crashdata-sh /vendor/bin/init.qcom.crashdata.sh
-#    class late_start
-#    user root
-#    oneshot
 
 service qcom-post-boot /vendor/bin/init.qcom.post_boot.sh
     class late_start
@@ -986,12 +972,11 @@ service vendor.hbtp /vendor/bin/hbtp_daemon
      capabilities SYS_NICE
      disabled
 
-#service chre /vendor/bin/chre
-#    class late_start
-#    user system
-#    group system
-#    socket chre seqpacket 0660 root system
-#    shutdown critical
+service wireless-init /system/vendor/bin/wireless_init -i
+    class main
+    user system
+    group system
+    oneshot
 
 on property:vendor.chre.enabled=0
    stop chre

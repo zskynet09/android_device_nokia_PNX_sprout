@@ -378,19 +378,14 @@ PRODUCT_PACKAGES += \
     init.qcom.sensors.sh \
     init.qcom.sh \
     init.qcom.usb.sh \
-    init.qti.qcv.sh \
     init.sensor.e2pwrite.sh \
     qca6234-service.sh \
     init.fingerprint.et520.rc \
     init.fingerprint.gf3258.rc \
     init.msm.usb.configfs.rc \
     init.pnx.target.rc \
-    init.qcom.emmc.rc \
-    init.qcom.factory.rc \
     init.qcom.rc \
-    init.qcom.target.rc \
     init.qcom.usb.rc \
-    init.qti.ufs.rc \
     init.target.rc \
     fstab.qcom \
     ueventd.qcom.rc

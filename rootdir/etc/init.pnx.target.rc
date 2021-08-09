@@ -30,6 +30,14 @@ on boot
     chmod 644 /proc/AllHWList/tp_alt_st_enable
     chmod 644 /proc/AllHWList/tp_double_tap
 
+    # Set emmc permissions
+    chown system system /proc/AllHWList/emmcinfo
+    chown system system /proc/AllHWList/draminfo
+    chown system system /proc/AllHWList/dramtest_result
+    chmod 664 /proc/AllHWList/emmcinfo
+    chmod 664 /proc/AllHWList/draminfo
+    chmod 664 /proc/AllHWList/dramtest_result
+
 on property:sys.boot_completed=1
     start qdcm_script
 
