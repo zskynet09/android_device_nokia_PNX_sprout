@@ -1,46 +1,108 @@
-import /vendor/etc/init/hw/init.pnx.elabel.rc
-import /vendor/etc/init/hw/init.pnx.chromatix.rc
-import /vendor/etc/init/hw/init.fih.ramdump.rc
 import /vendor/etc/init/hw/init.fingerprint.${ro.boot.fp}.rc
-import /vendor/etc/init/hw/init.pnx.sensor.rc
-#import /vendor/etc/init/hw/init.fih.dbg.rc
-import /vendor/etc/init/hw/init.pnx.touch.rc
-import /vendor/etc/init/hw/init.nfc.sec.rc
-import /vendor/etc/init/hw/init.pnx.audio.rc
-#import /vendor/etc/init/hw/init.pnx.wbg.rc
-#import /vendor/etc/init/hw/init.pnx.runin.rc
-#import /vendor/etc/init/hw/init.pnx.diagtest.rc
-import /vendor/etc/init/hw/init.pnx.lcm.rc
 import /vendor/etc/init/hw/init.msm.usb.configfs.rc
 
 on init
     setprop persist.vendor.fih.dbg.dev.info 2
 
-#on early-boot
-#    rm /persist/bluetooth/.bt_nv.bin
+on boot
+    # Set panel permissions
+    chown system system /proc/AllHWList/LCM0
+    chown system system /proc/AllHWList/LCM0/panelid
+    chown system system /proc/AllHWList/LCM0/fs_curr
+    chmod 777 /proc/AllHWList/LCM0
+    chmod 664 /proc/AllHWList/LCM0/panelid
+    chmod 664 /proc/AllHWList/LCM0/fs_curr
 
-#add for PNX FM radio begin
-#on boot
-#service wdsdaemon /vendor/bin/wdsdaemon -ms
-#    class main
-#    user root
-#    disabled
-#    oneshot
-#add for PNX FM radio end
+    # Set touch permissions
+    chown system system /proc/AllHWList/tp_fw_ver
+    chown system system /proc/AllHWList/tp_self_test
+    chown system system /proc/AllHWList/tp_upgrade
+    chown system system /proc/AllHWList/tp_alt_rst
+    chown system system /proc/AllHWList/tp_alt_st_count
+    chown system system /proc/AllHWList/tp_alt_st_enable
+    chown system system /proc/AllHWList/tp_double_tap
 
-# we change gp_persist_path from /persist/data/ to /vendor/securefs/data/
-# vendor/qcom/proprietary/securemsm/daemon/gpfspath_oem_config.xml
-# mkdir /persist/data 0700 system system in init.target.rc
+    chmod 644 /proc/AllHWList/tp_self_test
+    chmod 444 /proc/AllHWList/tp_fw_ver
+    chmod 644 /proc/AllHWList/tp_upgrade
+    chmod 644 /proc/AllHWList/tp_alt_rst
+    chmod 644 /proc/AllHWList/tp_alt_st_count
+    chmod 644 /proc/AllHWList/tp_alt_st_enable
+    chmod 644 /proc/AllHWList/tp_double_tap
+
+on property:sys.boot_completed=1
+    start qdcm_script
+
+on property:persist.vendor.qdcm.loadxml=1
+    setprop persist.vendor.qdcm.loadxml 0
+    copy /vendor/bin/qdcm_calib_data_hx83112_ctc_fhd_video_mode_dsi_panel.xml /data/vendor/display/qdcm_calib_data_hx83112_ctc_fhd_video_mode_dsi_panel.xml
+    copy /vendor/bin/qdcm_calib_data_nt36672a_ctc_fhd_video_mode_dsi_panel.xml /data/vendor/display/qdcm_calib_data_nt36672a_ctc_fhd_video_mode_dsi_panel.xml
+    chown system system /data/vendor/display/qdcm_calib_data_hx83112_ctc_fhd_video_mode_dsi_panel.xml
+    chown system system /data/vendor/display/qdcm_calib_data_nt36672a_ctc_fhd_video_mode_dsi_panel.xml
+    chmod 664 /data/vendor/display/qdcm_calib_data_hx83112_ctc_fhd_video_mode_dsi_panel.xml
+    chmod 664 /data/vendor/display/qdcm_calib_data_nt36672a_ctc_fhd_video_mode_dsi_panel.xml
+
+on property:persist.vendor.qdcm.configxml=1
+    setprop persist.vendor.qdcm.configxml 0
+    chown system system /data/vendor/display/qdcm_calib_data_hx83112_ctc_fhd_video_mode_dsi_panel.xml
+    chown system system /data/vendor/display/qdcm_calib_data_nt36672a_ctc_fhd_video_mode_dsi_panel.xml
+    chmod 664 /data/vendor/display/qdcm_calib_data_hx83112_ctc_fhd_video_mode_dsi_panel.xml
+    chmod 664 /data/vendor/display/qdcm_calib_data_nt36672a_ctc_fhd_video_mode_dsi_panel.xml
+
+on property:persist.vendor.qdcm.uninstall=1
+    setprop persist.vendor.qdcm.uninstall disable
+    rm /data/vendor/display/qdcm_calib_data_hx83112_ctc_fhd_video_mode_dsi_panel.xml
+    rm /data/vendor/display/qdcm_calib_data_nt36672a_ctc_fhd_video_mode_dsi_panel.xml
+    rm /data/vendor/display/disp_user_calib_data_hx83112_ctc_fhd_video_mode_dsi_panel.xml
+    rm /data/vendor/display/disp_user_calib_data_nt36672a_ctc_fhd_video_mode_dsi_panel.xml
+
 on fs
+    # we change gp_persist_path from /persist/data/ to /vendor/securefs/data/
     mkdir /vendor/securefs/data 0700 system system
+
+    # mount chromatix
+    wait /dev/block/bootdevice/by-name/chromatix
+    mount ext4 /dev/block/bootdevice/by-name/chromatix /vendor/chromatix noatime nosuid nodev barrier=1 context=u:object_r:chromatix_file:s0
+    chown system system /vendor/chromatix
+    restorecon_recursive /vendor/chromatix
+
+on post-fs-data
+    # Create touch dir
+    mkdir /data/vendor/misc/touch 0770 system system
+
+    # NFC storage
+    mkdir /data/vendor/nfc
+
+    # NFC permission
+    chown nfc nfc /dev/sec-nfc
+    chmod 0770 /dev/sec-nfc
+    chown nfc nfc /data/vendor/nfc
+    chmod 0770 /data/vendor/nfc
+
+    # Start sensor script
+    start vendor.e2p-sh
 
 on zygote-start
     mkdir /data/preloads 0775 system system
     mkdir /data/preloads/media 0775 system system
     mkdir /data/preloads/demo 0775 system system
 
-#on property:vendor.wifi.mtu=true
-#    write /sys/class/net/wlan0/mtu 1390
-#
-#on property:vendor.wifi.mtu=false
     write /sys/class/net/wlan0/mtu 1500
+
+service vendor.e2p-sh /vendor/bin/init.sensor.e2pwrite.sh
+    class late_start
+    user root
+    disabled
+    oneshot
+
+service nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service.sec
+    class hal
+    user nfc
+    group nfc
+
+service qdcm_script /vendor/bin/sh /vendor/bin/init.pnx.lcm.sh
+    disabled
+    class main
+    user root
+    group shell
+    oneshot
