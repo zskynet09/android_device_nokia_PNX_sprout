@@ -329,7 +329,6 @@ PRODUCT_PACKAGES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    fqcaudioloopback_pnx.sh \
     init.class_main.sh \
     init.crda.sh \
     init.mdm.sh \
@@ -346,19 +345,10 @@ PRODUCT_PACKAGES += \
     init.qti.qcv.sh \
     init.sensor.e2pwrite.sh \
     qca6234-service.sh \
-    android.hardware.nfc@1.2-service.sec.rc \
-    init.fih.ramdump.rc \
     init.fingerprint.et520.rc \
     init.fingerprint.gf3258.rc \
     init.msm.usb.configfs.rc \
-    init.nfc.sec.rc \
-    init.pnx.audio.rc \
-    init.pnx.chromatix.rc \
-    init.pnx.elabel.rc \
-    init.pnx.lcm.rc \
-    init.pnx.sensor.rc \
     init.pnx.target.rc \
-    init.pnx.touch.rc \
     init.qcom.emmc.rc \
     init.qcom.factory.rc \
     init.qcom.rc \
