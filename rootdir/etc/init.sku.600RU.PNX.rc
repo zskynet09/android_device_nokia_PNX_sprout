@@ -1,3 +1,0 @@
-on fs
-	setprop ro.vendor.build.fingerprint Nokia/Phoenix_00RU/PNXN:11/RKQ1.200906.002/00WW_6_210:user/release-keys
-	setprop ro.odm.build.fingerprint Nokia/Phoenix_00RU/PNXN:11/RKQ1.200906.002/00WW_6_210:user/release-keys

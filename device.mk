@@ -369,27 +369,6 @@ PRODUCT_PACKAGES += \
     init.qcom.target.rc \
     init.qcom.usb.rc \
     init.qti.ufs.rc \
-    init.sku.600E0.PNX.rc \
-    init.sku.600E0.PNXI.rc \
-    init.sku.600E0.PNXR.1.rc \
-    init.sku.600E0.PNXR.2.rc \
-    init.sku.600E0.rc \
-    init.sku.600ID.PNX.rc \
-    init.sku.600ID.PNXI.rc \
-    init.sku.600ID.PNXR.1.rc \
-    init.sku.600ID.PNXR.2.rc \
-    init.sku.600ID.rc \
-    init.sku.600RU.PNX.rc \
-    init.sku.600RU.PNXI.rc \
-    init.sku.600RU.PNXR.1.rc \
-    init.sku.600RU.PNXR.2.rc \
-    init.sku.600RU.rc \
-    init.sku.600WW.PNX.rc \
-    init.sku.600WW.PNXI.rc \
-    init.sku.600WW.PNXR.1.rc \
-    init.sku.600WW.PNXR.2.rc \
-    init.sku.600WW.rc \
-    init.sku.rc \
     init.target.rc \
     fstab.qcom \
     ueventd.qcom.rc
