@@ -142,6 +142,9 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 # RenderScript
 OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 
+# RIL
+ENABLE_VENDOR_RIL_SERVICE := true
+
 # Security patch level
 VENDOR_SECURITY_PATCH := 2021-05-01
 
