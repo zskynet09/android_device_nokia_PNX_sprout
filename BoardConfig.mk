@@ -85,6 +85,9 @@ BOARD_USES_RECOVERY_AS_BOOT := true
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_RECOVERY_FSTAB := device/nokia/Phoenix/rootdir/etc/recovery.fstab
 
+# RIL
+ENABLE_VENDOR_RIL_SERVICE := true
+
 # Sepolicy
 include device/qcom/sepolicy/SEPolicy.mk
 TARGET_USES_PREBUILT_VENDOR_SEPOLICY := true
