@@ -44,6 +44,13 @@ TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/nokia/sdm710
 TARGET_KERNEL_CONFIG := pnx-perf_defconfig
 
+# A/B updater
+AB_OTA_UPDATER := true
+
+AB_OTA_PARTITIONS += \
+    boot \
+    system
+
 # Assert
 TARGET_OTA_ASSERT_DEVICE := PNX_sprout
 
