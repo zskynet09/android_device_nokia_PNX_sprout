@@ -34,7 +34,6 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.service \
     android.hardware.soundtrigger@2.1-impl \
     audio.a2dp.default \
-    audio.primary.sdm710 \
     audio.r_submix.default \
     audio.usb.default \
     libaudio-resampler \
