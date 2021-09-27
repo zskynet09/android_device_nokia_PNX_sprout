@@ -287,6 +287,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
+# Radio
+PRODUCT_PACKAGES += \
+    libjson \
+    librmnetctl \
+    libxml2
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     fqcaudioloopback_pnx.sh \
