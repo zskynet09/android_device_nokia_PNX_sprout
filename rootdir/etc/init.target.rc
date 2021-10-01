@@ -154,6 +154,9 @@ on boot
     chown system system /sys/class/leds/blue/blink
 
 on charger
+    setprop persist.sys.usb.config mass_storage
+    start qcom-post-boot
+
     setprop sys.usb.configfs 1
 
 service spdaemon /vendor/bin/spdaemon
@@ -194,9 +197,6 @@ on property:init.svc.vendor.hwcomposer-2-3=running
 
 on property:init.svc.vendor.hwcomposer-2-3=restarting
     stop ppd
-
-on charger
-     setprop sys.usb.configfs 1
 
 service hbtp /system/vendor/bin/hbtp_daemon
      class main
