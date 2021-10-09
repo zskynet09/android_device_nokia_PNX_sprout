@@ -24,6 +24,10 @@ PRODUCT_PACKAGES += \
     otapreopt_script \
     cppreopts.sh
 
+# Audio
+PRODUCT_PACKAGES += \
+    audio.a2dp.default
+
 # Boot control
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.1-impl-qti \
