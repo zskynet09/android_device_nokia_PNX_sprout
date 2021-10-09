@@ -50,6 +50,7 @@ AB_OTA_UPDATER := true
 
 AB_OTA_PARTITIONS += \
     boot \
+    dtbo \
     system
 
 # Assert
@@ -75,6 +76,9 @@ DEVICE_FRAMEWORK_MANIFEST_FILE += $(DEVICE_PATH)/framework_manifest.xml
 # Partition (boot)
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
 BOARD_FLASH_BLOCK_SIZE := 262144
+
+# Partition (dtbo)
+BOARD_DTBOIMG_PARTITION_SIZE := 8388608
 
 # Partition (system)
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3221225472
