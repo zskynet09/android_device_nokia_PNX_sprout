@@ -47,6 +47,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.recovery.qcom.rc
 
+# Display
+PRODUCT_PACKAGES += \
+    libvulkan \
+    vendor.display.config@2.0 \
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
