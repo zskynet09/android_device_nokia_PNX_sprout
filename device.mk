@@ -49,7 +49,8 @@ PRODUCT_PACKAGES += \
 
 # Common init scripts
 PRODUCT_PACKAGES += \
-    init.recovery.qcom.rc
+    init.recovery.qcom.rc \
+    init.qcom.rc
 
 # Display
 PRODUCT_PACKAGES += \

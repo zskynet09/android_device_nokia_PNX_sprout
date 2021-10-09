@@ -43,6 +43,7 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 TARGET_KERNEL_ARCH := arm64
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz-dtb
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
+NEED_KERNEL_MODULE_SYSTEM := true
 
 # A/B updater
 AB_OTA_UPDATER := true
@@ -115,6 +116,8 @@ ENABLE_VENDOR_RIL_SERVICE := true
 # Sepolicy
 include device/qcom/sepolicy/SEPolicy.mk
 TARGET_USES_PREBUILT_VENDOR_SEPOLICY := true
+
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 
 # Inherit from the proprietary version
 include vendor/nokia/Phoenix/BoardConfigVendor.mk

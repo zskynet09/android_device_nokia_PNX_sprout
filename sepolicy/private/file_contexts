@@ -1,0 +1,2 @@
+# Modules
+/system/lib/modules/wlan\.ko    u:object_r:vendor_file:s0
