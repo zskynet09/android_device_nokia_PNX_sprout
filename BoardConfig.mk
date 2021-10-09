@@ -101,4 +101,7 @@ VENDOR_SECURITY_PATCH := 2021-05-01
 # Sepolicy
 include device/qcom/sepolicy/SEPolicy.mk
 
+# VNDK
+BOARD_VNDK_VERSION := current
+
 -include vendor/nokia/Phoenix/BoardConfigVendor.mk
