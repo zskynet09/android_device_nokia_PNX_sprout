@@ -167,7 +167,7 @@
      <bool name="config_supportAudioSourceUnprocessed">true</bool>
 
     <!-- Whether device supports double tap to wake -->
-     <bool name="config_supportDoubleTapWake">false</bool>
+     <bool name="config_supportDoubleTapWake">true</bool>
 
     <!-- Boolean indicating device still support system navigation keys -->
      <bool name="config_supportSystemNavigationKeys">true</bool>
