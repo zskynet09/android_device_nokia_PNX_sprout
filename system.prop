@@ -4,6 +4,7 @@
 
 # Bluetooth
 ro.bluetooth.library_name=libbluetooth_qti.so
+persist.vendor.bt.a2dp.aac_whitelist=false
 persist.vendor.btstack.aac_frm_ctl.enabled=true
 
 # Camera
