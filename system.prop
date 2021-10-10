@@ -70,6 +70,7 @@ media.stagefright.thumbnail.prefer_hw_codecs=true
 mmp.enable.3g2=true
 media.aac_51_output_enabled=true
 mm.enable.smoothstreaming=true
+media.settings.xml=product/etc/media_profiles_vendor.xml
 vendor.mm.enable.qcom_parser=16777215
 persist.mm.enable.prefetch=true
 debug.stagefright.ccodec=1
