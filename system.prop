@@ -22,6 +22,9 @@ persist.camera.ffcolor.lev3=fff0ac
 persist.camera.ffcolor.th2=4500
 persist.camera.ffcolor.lev2=fff3ee
 
+# CNE
+persist.vendor.cne.feature=1
+
 # Data modules
 persist.vendor.data.profile_update=true
 persist.data.tcp_rst_drop=true
