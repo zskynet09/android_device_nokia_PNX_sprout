@@ -69,7 +69,7 @@
          and the screen off animation has been performed. -->
     <bool name="config_dozeAfterScreenOffByDefault">false</bool>
     <bool name="config_dozeAlwaysOnDisplayAvailable">false</bool>
-    <bool name="config_dozeAlwaysOnEnabled">true</bool>
+    <bool name="config_dozeAlwaysOnEnabled">false</bool>
 
     <!-- Flag indicating device support for EAP SIM, AKA, AKA' -->
     <bool name="config_eap_sim_based_auth_supported">true</bool>
