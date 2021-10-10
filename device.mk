@@ -75,13 +75,13 @@ PRODUCT_COPY_FILES += \
 
 # IDC
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/idc/goodix_fp.idc:system/usr/idc/goodix_fp.idc \
-    $(LOCAL_PATH)/configs/idc/goodix_fp.idc:system/usr/idc/uinput-egis.idc \
+    $(LOCAL_PATH)/configs/idc/goodix_fp.idc:$(TARGET_COPY_OUT_SYSTEM)/usr/idc/goodix_fp.idc \
+    $(LOCAL_PATH)/configs/idc/goodix_fp.idc:$(TARGET_COPY_OUT_SYSTEM)/usr/idc/uinput-egis.idc \
 
 # Keylayout
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/keylayout/goodix_fp.kl:system/usr/keylayout/goodix_fp.kl \
-    $(LOCAL_PATH)/configs/keylayout/goodix_fp.kl:system/usr/keylayout/uinput-egis.kl \
+    $(LOCAL_PATH)/configs/keylayout/goodix_fp.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/goodix_fp.kl \
+    $(LOCAL_PATH)/configs/keylayout/goodix_fp.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/uinput-egis.kl \
 
 # Media
 PRODUCT_PACKAGES += \
@@ -115,7 +115,7 @@ PRODUCT_PACKAGES += \
 
 # QTI
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml \
+    $(LOCAL_PATH)/configs/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
     $(LOCAL_PATH)/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
     $(LOCAL_PATH)/permissions/telephony_system-ext_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml \
     $(LOCAL_PATH)/permissions/wfd-system-ext-privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml
