@@ -31,11 +31,6 @@ persist.vendor.data.profile_update=true
 persist.data.tcp_rst_drop=true
 persist.vendor.data.mode=concurrent
 
-# Dalvik
-dalvik.vm.heapsize=36m
-dev.pm.dyn_samplingrate=1
-dalvik.vm.dex2oat-threads=4
-
 # Display
 debug.sf.disable_backpressure=1
 debug.sf.enable_hwc_vds=1

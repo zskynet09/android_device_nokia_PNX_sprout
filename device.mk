@@ -1,6 +1,9 @@
 # Set shipping API level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
+# Setup dalvik vm configs
+$(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
+
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/nokia/Phoenix/Phoenix-vendor.mk)
 
