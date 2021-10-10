@@ -497,5 +497,8 @@
         <item>0,1</item>
         <item>7,1</item>
     </string-array>
+	
+	<!-- Specify if the fingerprint hardware support gestures-->
+    <bool name="config_fingerprintSupportsGestures">true</bool>
 
 </resources>
