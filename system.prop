@@ -61,6 +61,13 @@ ro.hwui.text_small_cache_height=1024
 ro.hwui.text_large_cache_width=2048
 ro.hwui.text_large_cache_height=1024
 
+# IMS
+persist.vendor.radio.lte_vrte_ltd=1
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
+telephony.lteOnCdmaDevice=1
+
 # Media
 qcom.hw.aac.encoder=true
 media.stagefright.enable-player=true
