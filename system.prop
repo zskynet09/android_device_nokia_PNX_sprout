@@ -23,6 +23,9 @@ persist.camera.ffcolor.lev3=fff0ac
 persist.camera.ffcolor.th2=4500
 persist.camera.ffcolor.lev2=fff3ee
 
+# Charger
+ro.charger.enable_suspend=true
+
 # CNE
 persist.vendor.cne.feature=1
 
