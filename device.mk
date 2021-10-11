@@ -16,6 +16,17 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
+# Boot control
+PRODUCT_PACKAGES += \
+    android.hardware.boot@1.1-impl-qti \
+    android.hardware.boot@1.1-impl-qti.recovery \
+    android.hardware.boot@1.1-service \
+    bootctrl.sdm710 \
+    bootctrl.sdm710.recovery
+
+PRODUCT_PACKAGES_DEBUG += \
+    bootctl
+
 # Exclude sensor from InputManager
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/excluded-input-devices.xml:system/etc/excluded-input-devices.xml
