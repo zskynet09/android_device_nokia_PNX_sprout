@@ -94,6 +94,10 @@ PRODUCT_PACKAGES += \
     SecureElement \
     Tag
 
+# QMI
+PRODUCT_PACKAGES += \
+    libqti_vndfwk_detect
+
 # QTI
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml \
