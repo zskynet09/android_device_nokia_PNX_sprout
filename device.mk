@@ -94,6 +94,10 @@ PRODUCT_PACKAGES += \
     SecureElement \
     Tag
 
+# Power
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.perf@2.2
+
 # QMI
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect \
