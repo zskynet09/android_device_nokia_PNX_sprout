@@ -96,7 +96,8 @@ PRODUCT_PACKAGES += \
 
 # QMI
 PRODUCT_PACKAGES += \
-    libqti_vndfwk_detect
+    libqti_vndfwk_detect \
+    libvndfwk_detect_jni.qti
 
 # QTI
 PRODUCT_COPY_FILES += \
