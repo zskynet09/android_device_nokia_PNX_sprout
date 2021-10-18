@@ -1,5 +1,3 @@
-BOARD_VENDOR := nokia
-
 DEVICE_PATH := device/nokia/Phoenix
 
 # Architecture
