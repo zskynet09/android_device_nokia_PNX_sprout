@@ -178,6 +178,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
 
+# Kernel modules
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,device/nokia/Phoenix/prebuilt/modules,$(TARGET_COPY_OUT_VENDOR)/lib/modules)
+
 # Keylayout
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/goodix_fp.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/goodix_fp.kl \
