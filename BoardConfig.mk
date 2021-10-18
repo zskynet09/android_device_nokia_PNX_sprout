@@ -51,9 +51,6 @@ AB_OTA_PARTITIONS += \
     dtbo \
     system
 
-# Assert
-TARGET_OTA_ASSERT_DEVICE := PNX_sprout
-
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 
