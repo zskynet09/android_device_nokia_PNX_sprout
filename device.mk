@@ -231,6 +231,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
 
+# Update Engine
+PRODUCT_PACKAGES += \
+    update_engine \
+    update_engine_sideload \
+    update_verifier
+
 # WiFi
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini \
