@@ -9,6 +9,10 @@ PRODUCT_PACKAGES += \
     otapreopt_script \
     cppreopts.sh
 
+# AID/fs configs
+PRODUCT_PACKAGES += \
+    fs_config_files
+
 # Audio
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
