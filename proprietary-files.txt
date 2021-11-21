@@ -644,8 +644,6 @@ vendor/firmware/novatek_ts_fw.bin
 vendor/firmware/PNX_TAS2557.bin
 vendor/firmware/sec_s3nrn81_firmware.bin
 vendor/firmware/TAS2557MSSMono.bin
-vendor/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini
-vendor/firmware/wlan/qca_cld/wlan_mac.bin
 
 # GPS
 -vendor/app/CACertService/CACertService.apk
@@ -856,8 +854,6 @@ vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so
 vendor/lib64/libkeymasterdeviceutils.so
 vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterutils.so
-vendor/lib64/libkeystore-engine-wifi-hidl.so
-vendor/lib64/libkeystore-wifi-hidl.so
 vendor/lib64/libqtikeymaster4.so
 vendor/lib64/libspcom.so
 
@@ -1742,17 +1738,6 @@ vendor/lib64/vendor.qti.hardware.vpp@1.2.so
 vendor/bin/cnss-daemon
 vendor/bin/cnss_diag
 vendor/bin/wireless_init
-vendor/bin/hw/android.hardware.wifi@1.0-service
-vendor/etc/init/android.hardware.wifi.supplicant-service.rc
-vendor/etc/init/android.hardware.wifi@1.0-service.rc
--vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml
--vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml
-vendor/lib64/vendor.qti.hardware.wifi.hostapd@1.0.so
-vendor/lib64/vendor.qti.hardware.wifi.hostapd@1.1.so
-vendor/lib64/vendor.qti.hardware.wifi.hostapd@1.2.so
-vendor/lib64/vendor.qti.hardware.wifi.supplicant@2.0.so
-vendor/lib64/vendor.qti.hardware.wifi.supplicant@2.1.so
-vendor/lib64/vendor.qti.hardware.wifi.supplicant@2.2.so
 
 # WiFi Display
 -framework/WfdCommon.jar
