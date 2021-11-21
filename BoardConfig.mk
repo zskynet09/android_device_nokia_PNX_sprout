@@ -56,6 +56,11 @@ TARGET_COPY_OUT_VENDOR := vendor
 # A/B
 AB_OTA_UPDATER := true
 
+AB_OTA_PARTITIONS += \
+    boot \
+    system \
+    vendor
+
 # HIDL
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
@@ -65,6 +70,8 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Recovery
+TARGET_NO_RECOVERY := true
+BOARD_USES_RECOVERY_AS_BOOT := true
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 
 # Security patch level
