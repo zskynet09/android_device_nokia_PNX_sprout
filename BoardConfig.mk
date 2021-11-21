@@ -96,5 +96,8 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 # Security patch level
 VENDOR_SECURITY_PATCH := 2021-05-01
 
+# Sepolicy
+include device/qcom/sepolicy/SEPolicy.mk
+
 # Inherit from the proprietary version
 include vendor/nokia/PNX_sprout/BoardConfigVendor.mk
