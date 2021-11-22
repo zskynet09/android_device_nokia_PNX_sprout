@@ -17,6 +17,9 @@ PRODUCT_PACKAGES += \
     fs_config_files
 
 # Audio
+PRODUCT_PACKAGES += \
+    audio.a2dp.default
+
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
