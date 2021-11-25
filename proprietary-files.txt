@@ -1839,10 +1839,6 @@ vendor/lib64/libwfdhdcpcp.so
 vendor/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
 
 # Misc
-system_ext/lib/libqti_vndfwk_detect.so
-system_ext/lib/libvndfwk_detect_jni.qti.so
-system_ext/lib64/libqti_vndfwk_detect.so
-system_ext/lib64/libvndfwk_detect_jni.qti.so
 vendor/etc/ozo_config.xml
 vendor/etc/PNX_RCVR_1kHz_-9p8dB.wav
 vendor/etc/PNX_RCVR_sweep_-9p8dB.wav
@@ -1851,13 +1847,9 @@ vendor/etc/PNX_SPKR_sweep_-6p3dB.wav
 vendor/etc/silence_48k-samplerate.wav
 vendor/lib/libozoaudiodecoder.so
 vendor/lib/libozoaudioencoder.so
-vendor/lib/libqti_vndfwk_detect.so
 vendor/lib/libstagefright_ozodecoder.so
 vendor/lib/libstagefright_ozoencoder.so
 vendor/lib/libstagefright_soft_ozodec.so
 vendor/lib/libstagefright_soft_ozoenc.so
-vendor/lib/libvndfwk_detect_jni.qti.so
 vendor/lib/libwifi-hal-ctrl.so
-vendor/lib64/libqti_vndfwk_detect.so
-vendor/lib64/libvndfwk_detect_jni.qti.so
 vendor/lib64/libwifi-hal-ctrl.so
