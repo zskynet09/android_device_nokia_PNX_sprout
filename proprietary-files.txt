@@ -1797,17 +1797,10 @@ vendor/lib64/libhbtpdsp.so
 vendor/lib64/libhbtpfrmwk.so
 
 # Vibrator
-vendor/bin/hw/vendor.qti.hardware.vibrator.service
-vendor/etc/init/vendor.qti.hardware.vibrator.service.rc
--vendor/etc/vintf/manifest/vendor.qti.hardware.vibrator.service.xml
-vendor/lib/hw/vibrator.default.so
 vendor/lib/libsoc_helper.so
 vendor/lib/libsoc_helper_jni.so
-vendor/lib64/hw/vibrator.default.so
-vendor/lib64/libqtivibratoreffect.so
 vendor/lib64/libsoc_helper.so
 vendor/lib64/libsoc_helper_jni.so
-vendor/lib64/vendor.qti.hardware.vibrator.impl.so
 
 # VPP
 vendor/bin/vppservice
