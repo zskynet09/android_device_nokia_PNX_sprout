@@ -1851,8 +1851,6 @@ vendor/etc/PNX_SPKR_sweep_-6p3dB.wav
 vendor/etc/silence_48k-samplerate.wav
 vendor/lib/libozoaudiodecoder.so
 vendor/lib/libozoaudioencoder.so
-vendor/lib/libprotobuf-cpp-full-3.9.1.so
-vendor/lib/libprotobuf-cpp-lite-3.9.1.so
 vendor/lib/libqti_vndfwk_detect.so
 vendor/lib/libstagefright_ozodecoder.so
 vendor/lib/libstagefright_ozoencoder.so
@@ -1860,9 +1858,6 @@ vendor/lib/libstagefright_soft_ozodec.so
 vendor/lib/libstagefright_soft_ozoenc.so
 vendor/lib/libvndfwk_detect_jni.qti.so
 vendor/lib/libwifi-hal-ctrl.so
-vendor/lib64/libprotobuf-cpp-full-3.9.1.so
-vendor/lib64/libprotobuf-cpp-lite-3.9.1.so
-vendor/lib64/libprotobuf-cpp-lite.so
 vendor/lib64/libqti_vndfwk_detect.so
 vendor/lib64/libvndfwk_detect_jni.qti.so
 vendor/lib64/libwifi-hal-ctrl.so
