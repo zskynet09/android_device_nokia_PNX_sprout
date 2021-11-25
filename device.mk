@@ -379,6 +379,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/seccomp/wifidisplayhalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wifidisplayhalservice.policy
 
 # Sensors
+PRODUCT_PACKAGES += \
+    android.hardware.sensors@2.0-service.multihal 
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
 
