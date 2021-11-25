@@ -140,6 +140,9 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 # Security patch level
 VENDOR_SECURITY_PATCH := 2021-05-01
 
+# Sensor multi HAL
+USE_SENSOR_MULTI_HAL := true
+
 # Sepolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 
