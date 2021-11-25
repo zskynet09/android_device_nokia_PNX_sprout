@@ -152,13 +152,7 @@ vendor/lib64/libspkrprot.so
 vendor/lib64/libssrec.so
 
 # Audio (Hardware)
-vendor/lib/soundfx/libqcompostprocbundle.so
-vendor/lib/soundfx/libqcomvisualizer.so
-vendor/lib/soundfx/libqcomvoiceprocessing.so
 vendor/lib/vendor.qti.hardware.audiohalext@1.0.so
-vendor/lib64/soundfx/libqcompostprocbundle.so
-vendor/lib64/soundfx/libqcomvisualizer.so
-vendor/lib64/soundfx/libqcomvoiceprocessing.so
 vendor/lib64/vendor.qti.hardware.audiohalext@1.0.so
 
 # Bluetooth

@@ -29,6 +29,10 @@ PRODUCT_PACKAGES += \
     audio.primary.sdm710 \
     audio.r_submix.default \
     audio.usb.default \
+    libqcompostprocbundle \
+    libqcomvisualizer \
+    libqcomvoiceprocessing \
+    libvolumelistener \
     tinymix
 
 PRODUCT_COPY_FILES += \
