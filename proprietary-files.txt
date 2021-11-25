@@ -176,14 +176,6 @@ vendor/lib64/libsndmonitor.so
 vendor/lib64/libspkrprot.so
 vendor/lib64/libssrec.so
 
-# Audio (Hardware)
-vendor/lib/soundfx/libqcompostprocbundle.so
-vendor/lib/soundfx/libqcomvisualizer.so
-vendor/lib/soundfx/libqcomvoiceprocessing.so
-vendor/lib64/soundfx/libqcompostprocbundle.so
-vendor/lib64/soundfx/libqcomvisualizer.so
-vendor/lib64/soundfx/libqcomvoiceprocessing.so
-
 # Bluetooth
 system_ext/lib/com.qualcomm.qti.bluetooth_audio@1.0.so
 system_ext/lib/vendor.qti.hardware.bluetooth_audio@2.0.so
