@@ -18,7 +18,18 @@ PRODUCT_PACKAGES += \
 
 # Audio
 PRODUCT_PACKAGES += \
-    audio.a2dp.default
+    android.hardware.audio@6.0 \
+    android.hardware.audio.common@6.0 \
+    android.hardware.audio.common@6.0-util \
+    android.hardware.audio@6.0-impl \
+    android.hardware.audio.effect@6.0 \
+    android.hardware.audio.effect@6.0-impl \
+    android.hardware.audio.service \
+    audio.a2dp.default \
+    audio.primary.sdm710 \
+    audio.r_submix.default \
+    audio.usb.default \
+    tinymix
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
