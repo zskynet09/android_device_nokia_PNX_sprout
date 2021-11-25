@@ -35,6 +35,19 @@ PRODUCT_PACKAGES += \
     libvolumelistener \
     tinymix
 
+PRODUCT_PACKAGES += \
+    liba2dpoffload \
+    libbatterylistener \
+    libcirrusspkrprot \
+    libcomprcapture \
+    libexthwplugin \
+    libhdmiedid \
+    libhdmipassthru \
+    libhfp \
+    libsndmonitor \
+    libspkrprot \
+    libssrec
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
     $(LOCAL_PATH)/configs/audio/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.conf \
