@@ -75,7 +75,8 @@ AB_OTA_PARTITIONS += \
     boot \
     dtbo \
     system \
-    vendor
+    vendor \
+    vbmeta
 
 # Audio
 AUDIO_FEATURE_ENABLED_AAC_ADTS_OFFLOAD := true
@@ -155,6 +156,11 @@ include device/qcom/sepolicy_vndr/SEPolicy.mk
 # Treble
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 PRODUCT_VENDOR_MOVE_ENABLED := true
+
+# Verified Boot
+BOARD_AVB_ENABLE := true
+BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --set_hashtree_disabled_flag
+BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 2
 
 # WiFi
 BOARD_WLAN_DEVICE := qcwcn
