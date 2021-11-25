@@ -1829,7 +1829,3 @@ vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so
 vendor/lib64/libwfddisplayconfig_proprietary.so
 vendor/lib64/libwfdhdcpcp.so
 vendor/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
-
-# Misc
-vendor/lib/libavservices_minijail.so
-vendor/lib64/libavservices_minijail.so
