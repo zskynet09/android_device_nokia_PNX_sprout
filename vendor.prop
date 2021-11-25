@@ -169,6 +169,9 @@ vendor.mm.enable.qcom_parser=16777215
 # Navigation
 qemu.hw.mainkeys=0
 
+# Network manager
+persist.vendor.data.iwlan.enable=true
+
 # NFC
 ro.boot.nfc=sec
 ro.hardware.nfc_nci=sec
