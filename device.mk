@@ -30,6 +30,7 @@ PRODUCT_PACKAGES += \
     audio.primary.sdm710 \
     audio.r_submix.default \
     audio.usb.default \
+    libaudiopreprocessing \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
