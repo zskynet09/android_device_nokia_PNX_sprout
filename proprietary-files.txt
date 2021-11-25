@@ -1968,15 +1968,10 @@ system_ext/lib/libvndfwk_detect_jni.qti.so
 system_ext/lib64/libqti_vndfwk_detect.so
 system_ext/lib64/libvndfwk_detect_jni.qti.so
 vendor/lib/libavservices_minijail.so
-vendor/lib/libprotobuf-cpp-full-3.9.1.so
-vendor/lib/libprotobuf-cpp-lite-3.9.1.so
 vendor/lib/libqti_vndfwk_detect.so
 vendor/lib/libvndfwk_detect_jni.qti.so
 vendor/lib/libwifi-hal-ctrl.so
 vendor/lib64/libavservices_minijail.so
-vendor/lib64/libprotobuf-cpp-full-3.9.1.so
-vendor/lib64/libprotobuf-cpp-lite-3.9.1.so
-vendor/lib64/libprotobuf-cpp-lite.so
 vendor/lib64/libqti_vndfwk_detect.so
 vendor/lib64/libvndfwk_detect_jni.qti.so
 vendor/lib64/libwifi-hal-ctrl.so
