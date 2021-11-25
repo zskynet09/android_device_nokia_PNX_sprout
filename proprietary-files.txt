@@ -165,10 +165,6 @@ vendor/lib64/libaptX_encoder.so
 
 # Camera
 system_ext/lib/vendor.qti.hardware.camera.device@1.0.so
-vendor/bin/hw/android.hardware.camera.provider@2.4-service
-vendor/etc/init/android.hardware.camera.provider@2.4-service.rc
-vendor/lib/android.hardware.camera.provider@2.4-external.so
-vendor/lib/android.hardware.camera.provider@2.4-legacy.so
 vendor/lib/camera/back_hdr_param.bin
 vendor/lib/camera/com.qti.eeprom.truly_cmb433.so
 vendor/lib/camera/com.qti.sensor.imx363.so
@@ -201,7 +197,6 @@ vendor/lib/camera/firmware.camera.truly_s5k3l6.version.bin
 vendor/lib/camera/firmware.camera.truly_s5k3t1sp.version.bin
 vendor/lib/camera/firmware.camera.truly_s5k3t1sp_ind.version.bin
 vendor/lib/camera/front_hdr_param.bin
-vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so
 vendor/lib/hw/camera.qcom.so
 vendor/lib/hw/com.qti.chi.override.so
 vendor/lib/libc++_shared.so
@@ -230,8 +225,6 @@ vendor/lib/libswvdec.so
 vendor/lib/libvideoutils.so
 vendor/lib/libvidhance.so
 vendor/lib/vendor.qti.hardware.camera.device@1.0.so
-vendor/lib64/android.hardware.camera.provider@2.4-external.so
-vendor/lib64/android.hardware.camera.provider@2.4-legacy.so
 vendor/lib64/camera/com.qti.eeprom.truly_cmb433.so
 vendor/lib64/camera/com.qti.sensor.imx363.so
 vendor/lib64/camera/com.qti.sensor.imx363_liteon.so
@@ -254,7 +247,6 @@ vendor/lib64/camera/com.qti.tuned.sunny_s5k2l7.bin
 vendor/lib64/camera/com.qti.tuned.truly_imx363.bin
 vendor/lib64/camera/com.qti.tuned.truly_s5k3l6.bin
 vendor/lib64/camera/com.qti.tuned.truly_s5k3t1sp.bin
-vendor/lib64/hw/android.hardware.camera.provider@2.4-impl.so
 vendor/lib64/hw/camera.qcom.so
 vendor/lib64/hw/com.qti.chi.override.so
 vendor/lib64/libcamera2ndk_vendor.so
