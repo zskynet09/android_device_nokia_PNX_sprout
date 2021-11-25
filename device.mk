@@ -87,6 +87,7 @@ PRODUCT_PACKAGES_DEBUG += \
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service \
+    libcamera2ndk_vendor \
     vendor.qti.hardware.camera.device@1.0.vendor \
 
 # Display
