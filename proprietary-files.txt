@@ -164,7 +164,6 @@ vendor/lib64/libaptXHD_encoder.so
 vendor/lib64/libaptX_encoder.so
 
 # Camera
-system_ext/lib/vendor.qti.hardware.camera.device@1.0.so
 vendor/lib/camera/back_hdr_param.bin
 vendor/lib/camera/com.qti.eeprom.truly_cmb433.so
 vendor/lib/camera/com.qti.sensor.imx363.so
