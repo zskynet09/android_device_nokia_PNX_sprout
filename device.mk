@@ -30,6 +30,7 @@ PRODUCT_PACKAGES += \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
+    libtinycompress \
 
 PRODUCT_PACKAGES += \
     liba2dpoffload \
