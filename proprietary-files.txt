@@ -1828,5 +1828,3 @@ vendor/lib/libstagefright_ozodecoder.so
 vendor/lib/libstagefright_ozoencoder.so
 vendor/lib/libstagefright_soft_ozodec.so
 vendor/lib/libstagefright_soft_ozoenc.so
-vendor/lib/libwifi-hal-ctrl.so
-vendor/lib64/libwifi-hal-ctrl.so
