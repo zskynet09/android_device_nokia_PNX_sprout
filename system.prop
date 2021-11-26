@@ -129,3 +129,4 @@ persist.sys.wfd.virtual=0
 
 # Wifi
 config.disable_rtt=true
+wifi.interface=wlan0
