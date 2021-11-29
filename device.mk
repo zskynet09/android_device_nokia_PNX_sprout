@@ -24,6 +24,10 @@ PRODUCT_PACKAGES += \
     otapreopt_script \
     cppreopts.sh
 
+# ANT+
+PRODUCT_PACKAGES += \
+    AntHalService-Soong \
+
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default

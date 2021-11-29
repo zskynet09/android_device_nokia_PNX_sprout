@@ -55,6 +55,9 @@ AB_OTA_PARTITIONS += \
 # Assert
 TARGET_OTA_ASSERT_DEVICE := PNX_sprout
 
+# ANT+
+BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
+
 # Audio
 USE_CUSTOM_AUDIO_POLICY := 1
 
