@@ -5,15 +5,6 @@ on init
     setprop persist.vendor.fih.dbg.dev.info 2
 
 on boot
-    #setprop persist.vendor.ssr.restart_level ALL_ENABLE
-    write /sys/bus/msm_subsys/devices/subsys0/restart_level RELATED
-    write /sys/bus/msm_subsys/devices/subsys1/restart_level RELATED
-    write /sys/bus/msm_subsys/devices/subsys2/restart_level RELATED
-    write /sys/bus/msm_subsys/devices/subsys3/restart_level RELATED
-    write /sys/bus/msm_subsys/devices/subsys4/restart_level RELATED
-    write /sys/bus/msm_subsys/devices/subsys5/restart_level RELATED
-    write /sys/bus/msm_subsys/devices/subsys6/restart_level RELATED
-
     # Set panel permissions
     chown system system /proc/AllHWList/LCM0
     chown system system /proc/AllHWList/LCM0/panelid
