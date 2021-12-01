@@ -64,11 +64,6 @@ on post-fs
 
     write /dev/ipa 1
 
-service sec_nvm /vendor/bin/sec_nvm
-    class core
-    user system
-    group system
-
 on late-fs
     mount_all /vendor/etc/fstab.qcom --late
 
@@ -172,11 +167,6 @@ on property:init.svc.vendor.charger=running
     start vendor.hvdcp_opti
     setprop sys.usb.configfs 1
 
-service spdaemon /vendor/bin/spdaemon
-    class core
-    user system
-    group system
-
 service thermal-engine /system/vendor/bin/thermal-engine
    class main
    user root
@@ -215,9 +205,3 @@ service vendor.hvdcp_opti /vendor/bin/hvdcp_opti
     class main
     user root
     group system wakelock
-
-service energy-awareness /system/vendor/bin/energy-awareness
-    class main
-    user system
-    group system
-    oneshot
