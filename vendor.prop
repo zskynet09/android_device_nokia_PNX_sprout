@@ -114,8 +114,8 @@ ro.crypto.set_dun=true
 ro.crypto.volume.filenames_mode=aes-256-cts
 
 # Display
-debug.egl.hw=0
-debug.sf.hw=0
+debug.egl.hw=1
+debug.sf.hw=1
 persist.sys.sf.native_mode=0
 ro.vendor.display.cabl=2
 vendor.display.enable_default_color_mode=1
