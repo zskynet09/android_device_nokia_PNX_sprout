@@ -120,6 +120,7 @@ PRODUCT_PACKAGES += \
     libvulkan \
     vendor.display.config@2.0 \
     vendor.display.config@2.0.vendor \
+    vendor.qti.hardware.capabilityconfigstore@1.0.vendor \
     vendor.qti.hardware.display.allocator@1.0-service \
     vendor.qti.hardware.display.composer@3.0 \
     vendor.qti.hardware.display.mapper@1.1.vendor \
