@@ -139,6 +139,9 @@ BOARD_USES_RECOVERY_AS_BOOT := true
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
+# RenderScript
+OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
+
 # Security patch level
 VENDOR_SECURITY_PATCH := 2021-05-01
 
