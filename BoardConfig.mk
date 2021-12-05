@@ -119,6 +119,9 @@ TARGET_ENABLE_MEDIADRM_64 := true
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 DEVICE_MATRIX_FILE += $(DEVICE_PATH)/compatibility_matrix.xml
 
+# Keystore
+TARGET_PROVIDES_KEYMASTER := true
+
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
