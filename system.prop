@@ -108,10 +108,6 @@ persist.vendor.sensors.enable.mag_filter=true
 # Time
 persist.timed.enable=true
 
-# WFD
-persist.debug.wfd.enable=1
-persist.sys.wfd.virtual=0
-
 # Wifi
 config.disable_rtt=true
 wifi.interface=wlan0
