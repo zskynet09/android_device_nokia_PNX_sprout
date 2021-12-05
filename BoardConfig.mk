@@ -113,6 +113,10 @@ TARGET_HAS_WIDE_COLOR_DISPLAY := true
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
+# FM
+BOARD_HAVE_QCOM_FM := true
+BOARD_HAS_QCA_FM_SOC := "cherokee"
+
 # Graphics
 TARGET_USES_DRM_PP := true
 TARGET_USES_GRALLOC1 := true

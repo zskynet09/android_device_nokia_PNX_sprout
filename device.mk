@@ -143,6 +143,15 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.pnx
 
+# FM
+PRODUCT_PACKAGES += \
+    FM2 \
+    libqcomfm_jni \
+    qcom.fmradio
+
+PRODUCT_PACKAGES += \
+    android.hardware.broadcastradio@1.0-impl
+
 # Framework detect
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect \
