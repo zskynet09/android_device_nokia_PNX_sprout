@@ -110,10 +110,6 @@ persist.vendor.sensors.enable.mag_filter=true
 # Voice assistant
 ro.opa.device_model_id=camera-880e6-nokia-8.1-rg4bqo
 
-# WFD
-persist.debug.wfd.enable=1
-persist.sys.wfd.virtual=0
-
 # ZRAM writeback
 ro.zram.first_wb_delay_mins=180
 ro.zram.mark_idle_delay_mins=60
