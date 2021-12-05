@@ -95,6 +95,9 @@ TARGET_USERIMAGES_SPARSE_EXT_DISABLED := false
 BUILD_WITHOUT_VENDOR := true
 TARGET_COPY_OUT_VENDOR := vendor
 
+# Power
+TARGET_TAP_TO_WAKE_NODE := "/proc/AllHWList/tp_double_tap"
+
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
