@@ -84,7 +84,6 @@ persist.radio.oem_socket=true
 persist.env.fastdorm.enabled=true
 persist.data.tcp_rst_drop=true
 persist.radio.flexmap_type=nw_mode
-ro.telephony.default_network=22
 persist.radio.adb_log_on=3
 persist.vendor.radio.custom_ecc=1
 persist.radio.qcom_ext_enable=true
