@@ -75,8 +75,6 @@ persist.vendor.radio.data_con_rprt=1
 persist.vendor.radio.lte_vrte_ltd=1
 persist.vendor.radio.oem_socket=true
 ril.subscription.types=NV,RUIM
-ro.telephony.default_network=22
-ro.telephony.default_network=33,33
 telephony.lteOnCdmaDevice=1
 
 # Rmnet data
