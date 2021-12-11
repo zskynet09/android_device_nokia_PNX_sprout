@@ -98,6 +98,9 @@ persist.data.df.dev_name=rmnet_usb0
 # SDCard
 persist.fuse_sdcard=true
 
+# Seamless transfer
+sys.fflag.override.settings_seamless_transfer=true
+
 # Sensors
 persist.vendor.sensors.enable.mag_filter=true
 
