@@ -9,3 +9,6 @@ camera.panorama.quality=high
 
 # Google
 ro.opa.eligible_device=true
+
+# IORap
+persist.device_config.runtime_native_boot.iorap_readahead_enable=true
