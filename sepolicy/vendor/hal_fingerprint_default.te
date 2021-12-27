@@ -1,5 +1,36 @@
+# Allow Binder communication
+vndbinder_use(hal_fingerprint_default)
+binder_call(hal_fingerprint_default, goodix_fingerprint_vndservice)
+
+# Allow HwBinder communication
+hwbinder_use(hal_fingerprint_default)
+
+# Add services
+allow hal_fingerprint_default goodix_fingerprint_vndservice:service_manager { add find };
+
+typeattribute hal_fingerprint_default data_between_core_and_vendor_violators;
+
+# Allow hal_fingerprint_default to write property_socket, tad_socket
+allow hal_fingerprint_default property_socket:sock_file write;
+
+# Allow access to /dev/goodix_fp
+allow hal_fingerprint_default goodix_device:chr_file rw_file_perms;
+
+# Allow storing fingerprint data
 allow hal_fingerprint_default fingerprintd_data_file:dir rw_dir_perms;
 allow hal_fingerprint_default fingerprintd_data_file:file rw_file_perms;
+
+# Allow access to create netlink_socket
 allow hal_fingerprint_default self:netlink_socket { bind create read write };
-allow hal_fingerprint_default property_socket:sock_file { write };
+
+# Allow access to tee device
+allow hal_fingerprint_default tee_device:chr_file rw_file_perms;
+
+# Allow hal_fingerprint_default to connect init to the unix_stream_socket 
 allow hal_fingerprint_default init:unix_stream_socket connectto;
+
+# Allow reading firmware file
+r_dir_file(hal_fingerprint_default, firmware_file)
+
+# Allow read/write property
+set_prop(hal_fingerprint_default, vendor_fp_prop)

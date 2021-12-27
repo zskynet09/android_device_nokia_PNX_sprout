@@ -2,3 +2,8 @@
 /bt_firmware(/.*)?                              u:object_r:bt_firmware_file:s0
 /firmware(/.*)?                                 u:object_r:firmware_file:s0
 /persist                                        u:object_r:mnt_vendor_file:s0
+
+# Fingerprint
+/dev/goodix_fp                      u:object_r:goodix_device:s0
+/data/vendor/gf_data(/.*)?          u:object_r:goodix_vendor_data_file:s0
+/vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.pnx u:object_r:hal_fingerprint_default_exec:s0
