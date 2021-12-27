@@ -1,0 +1,2 @@
+# Allow access to goodix data
+allow vendor_init goodix_vendor_data_file:dir getattr;
