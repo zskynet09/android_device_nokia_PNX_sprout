@@ -1,2 +1,7 @@
-# Allow access to goodix data
-allow vendor_init goodix_vendor_data_file:dir getattr;
+typeattribute vendor_init data_between_core_and_vendor_violators;
+
+allow vendor_init {
+  fingerprintd_data_file
+  goodix_vendor_data_file
+  system_data_file
+}:dir { create search getattr open read setattr ioctl write add_name remove_name rmdir relabelfrom };
