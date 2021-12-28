@@ -9,3 +9,6 @@ allow qti_init_shell proc_extra_free_kbytes:file { open write };
 allow qti_init_shell configfs:dir create_dir_perms;
 allow qti_init_shell configfs:file create_file_perms;
 allow qti_init_shell configfs:lnk_file create_file_perms;
+
+# Sysfs
+allow qti_init_shell { sysfs sysfs_leds }:file setattr;
