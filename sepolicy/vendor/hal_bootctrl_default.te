@@ -1,2 +1,6 @@
 # Read dir permission for dt_firmware
 allow hal_bootctl sysfs_dt_firmware_android:dir r_dir_perms;
+
+# Getting and setting GPT attributes for the bootloader iterates over all the
+# partition names in the block_device directory /dev/block/.../by-name
+allow hal_bootctl_default block_device:dir r_dir_perms;
