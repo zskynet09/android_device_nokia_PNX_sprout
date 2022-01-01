@@ -1,0 +1,2 @@
+allow hal_bootctl_default sysfs_dt_firmware_android:dir r_dir_perms;
+allow hal_bootctl_default sysfs_dt_firmware_android:file r_file_perms;
