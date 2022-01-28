@@ -58,6 +58,9 @@ function blob_fixup() {
         vendor/etc/nfcee_access.xml)
             sed -i -e 's|xliff=\"urn:oasis:names:tc:xliff:document:1.2|android=\"http:\/\/schemas.android.com\/apk\/res\/android|' "${2}"
             ;;
+        system_ext/lib64/lib-imsvideocodec.so)
+            ${PATCHELF} --add-needed "lib-imsvtshim.so" "${2}"
+            ;;
     esac
 }
 
