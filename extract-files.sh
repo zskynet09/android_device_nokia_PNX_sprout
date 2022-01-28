@@ -66,6 +66,9 @@ function blob_fixup() {
             "${PATCHELF}" --remove-needed "libmegface-new.so" "${2}"
             "${PATCHELF}" --add-needed "libshim_megvii.so" "${2}"
             ;;
+        system_ext/lib64/lib-imsvideocodec.so)
+            "${PATCHELF}" --add-needed "libshim_imsvideocodec.so" "${2}"
+            ;;
     esac
 }
 
