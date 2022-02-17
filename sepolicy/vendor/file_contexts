@@ -16,5 +16,8 @@
 /dev/sec-nfc                                                               u:object_r:sec_device:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.nfc@1\.2-service\.sec    u:object_r:hal_nfc_default_exec:s0
 
+# Power HAL
+/(vendor|system/vendor)/bin/hw/android\.hardware\.power\.stats@1\.0-service\.mock        u:object_r:hal_power_stats_default_exec:s0
+
 # Sensors
 /vendor/bin/init\.sensor\.e2pwrite\.sh	        u:object_r:sensors_e2p_exec:s0
