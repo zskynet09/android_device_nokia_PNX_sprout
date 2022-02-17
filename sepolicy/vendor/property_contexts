@@ -1,3 +1,8 @@
+# Camera
+persist.vendor.camera.     u:object_r:camera_prop:s0
+camera.                    u:object_r:camera_prop:s0
+persist.camera.            u:object_r:camera_prop:s0
+
 # Fingerprint
 vendor.gxfp.                    u:object_r:vendor_fp_prop:s0
 vendor.egfp.version             u:object_r:vendor_fp_prop:s0
