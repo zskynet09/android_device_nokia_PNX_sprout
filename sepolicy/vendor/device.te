@@ -1,3 +1,6 @@
 # Fingerprint
 type etsd_device, dev_type;
 type goodix_device, dev_type;
+
+# NFC
+type sec_device, dev_type;

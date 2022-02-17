@@ -1,0 +1,2 @@
+# Allow access to /dev/sec-nfc
+allow hal_nfc_default sec_device:chr_file rw_file_perms;
