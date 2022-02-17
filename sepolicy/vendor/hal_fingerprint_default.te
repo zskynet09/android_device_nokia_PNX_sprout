@@ -1,15 +1,18 @@
 # Allow Binder communication
 vndbinder_use(hal_fingerprint_default)
 binder_call(hal_fingerprint_default, goodix_fingerprint_vndservice)
+binder_call(hal_fingerprint_default, egis_fingerprint_vndservice)
 
 # Allow HwBinder communication
 hwbinder_use(hal_fingerprint_default)
 
 # Register to hwservice
 add_hwservice(hal_fingerprint_default, hal_fingerprint_goodix_hwservice)
+add_hwservice(hal_fingerprint_default, hal_fingerprint_egis_hwservice)
 
 # Add services
 allow hal_fingerprint_default goodix_fingerprint_vndservice:service_manager { add find };
+allow hal_fingerprint_default egis_fingerprint_vndservice:service_manager { add find };
 
 typeattribute hal_fingerprint_default data_between_core_and_vendor_violators;
 
@@ -18,6 +21,9 @@ allow hal_fingerprint_default property_socket:sock_file write;
 
 # Allow access to /dev/goodix_fp
 allow hal_fingerprint_default goodix_device:chr_file rw_file_perms;
+
+# Allow access to /dev/esfp0
+allow hal_fingerprint_default etsd_device:chr_file rw_file_perms;
 
 # Allow storing fingerprint data
 allow hal_fingerprint_default fingerprintd_data_file:file create_file_perms;
