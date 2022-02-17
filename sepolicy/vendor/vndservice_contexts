@@ -1,1 +1,2 @@
 android.hardware.fingerprint.IGoodixFingerprintDaemon   u:object_r:goodix_fingerprint_vndservice:s0
+vendor.egistec.hardware.fingerprint.IBiometricsFingerprintEts u:object_r:egis_fingerprint_vndservice:s0

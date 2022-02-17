@@ -1,1 +1,2 @@
 type hal_fingerprint_goodix_hwservice, hwservice_manager_type;
+type hal_fingerprint_egis_hwservice, hwservice_manager_type;

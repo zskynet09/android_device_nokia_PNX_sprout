@@ -1,2 +1,3 @@
 # Fingerprint
 vendor.goodix.hardware.fingerprint::IGoodixBiometricsFingerprint    u:object_r:hal_fingerprint_goodix_hwservice:s0
+vendor.egistec.hardware.fingerprint::IBiometricsFingerprintEts      u:object_r:hal_fingerprint_egis_hwservice:s0
