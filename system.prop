@@ -86,7 +86,6 @@ persist.vendor.radio.data_con_rprt=1
 persist.vendor.radio.lte_vrte_ltd=1
 persist.vendor.radio.oem_socket=true
 ril.subscription.types=NV,RUIM
-telephony.lteOnCdmaDevice=1
 
 # Rmnet data
 persist.rmnet.data.enable=true
