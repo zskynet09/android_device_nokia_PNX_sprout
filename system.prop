@@ -65,7 +65,6 @@ persist.vendor.radio.lte_vrte_ltd=1
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
-telephony.lteOnCdmaDevice=1
 
 # Media
 qcom.hw.aac.encoder=true
