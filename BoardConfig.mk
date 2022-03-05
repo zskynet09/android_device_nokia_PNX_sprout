@@ -154,7 +154,7 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # Security patch level
-VENDOR_SECURITY_PATCH := 2021-05-01
+VENDOR_SECURITY_PATCH := 2021-12-01
 
 # Sensor multi HAL
 USE_SENSOR_MULTI_HAL := true
