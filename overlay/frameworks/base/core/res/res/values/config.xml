@@ -419,6 +419,12 @@
         <item>50</item>
     </integer-array>
 
+    <!-- Whether or not the device is capable of multiple levels of vibration intensity.
+         Note that this is different from whether it can control the vibration amplitude as some
+         devices will be able to vary their amplitude but do not possess enough dynamic range to
+         have distinct intensity levels -->
+    <bool name="config_vibration_supports_multiple_intensities">true</bool>
+
     <!-- Configure mobile tcp buffer sizes in the form:
          rat-name:rmem_min,rmem_def,rmem_max,wmem_min,wmem_def,wmem_max
          If no value is found for the rat-name in use, the system default will be applied.
