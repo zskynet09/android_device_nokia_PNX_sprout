@@ -25,7 +25,6 @@ persist.vendor.data.mode=concurrent
 persist.backup.ntpServer="0.pool.ntp.org"
 
 # Graphic
-debug.sf.disable_backpressure=1
 debug.sf.enable_hwc_vds=1
 debug.sf.latch_unsignaled=1
 
