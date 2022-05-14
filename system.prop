@@ -11,7 +11,6 @@ persist.camera.awbdefine=1
 persist.camera.debug_img_exif=1
 persist.camera.expose.aux=1
 persist.vendor.camera.privapp.list=com.android.cts.verifier,com.hmdglobal.camera2
-vendor.camera.aux.packagelist=com.fihtdc.fap,com.evenwell.fqc,com.tools.alt,org.codeaurora.snapcam,com.hmdglobal.camera2
 
 # Charger
 ro.charger.enable_suspend=true
