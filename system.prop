@@ -86,7 +86,6 @@ persist.radio.qcom_ext_enable=true
 persist.vendor.radio.lte_vrte_ltd=1
 persist.vendor.radio.oem_socket=true
 persist.vendor.radio.data_con_rprt=1
-rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 ril.subscription.types=NV,RUIM
 DEVICE_PROVISIONED=1
 telephony.lteOnCdmaDevice=1
