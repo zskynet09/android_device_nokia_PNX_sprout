@@ -2,10 +2,6 @@
 # system.prop for PNX
 #
 
-# Audio
-tunnel.audio.encode = true
-use.voice.path.for.pcm.voip=true
-
 # Bluetooth
 ro.bluetooth.library_name=libbluetooth_qti.so
 persist.vendor.btstack.aac_frm_ctl.enabled=true
@@ -26,14 +22,12 @@ persist.vendor.data.profile_update=true
 persist.vendor.data.mode=concurrent
 
 # GPS
-persist.vendor.overlay.izat.optin=rro
 persist.backup.ntpServer="0.pool.ntp.org"
 
 # Graphic
 debug.sf.disable_backpressure=1
 debug.sf.enable_hwc_vds=1
 debug.sf.latch_unsignaled=1
-persist.sys.force_sw_gles=1
 
 # IMS
 persist.ims.enableADBLogs=1
@@ -55,11 +49,7 @@ media.stagefright.enable-qcp=true
 media.stagefright.enable-fma2dp=true
 media.stagefright.enable-scan=true
 media.stagefright.thumbnail.prefer_hw_codecs=true
-mmp.enable.3g2=true
-media.aac_51_output_enabled=true
-mm.enable.smoothstreaming=true
 vendor.mm.enable.qcom_parser=16777215
-persist.mm.enable.prefetch=true
 debug.stagefright.ccodec=1
 ro.media.recorder-max-base-layer-fps = 60
 
@@ -68,9 +58,6 @@ ro.netflix.bsp_rev=Q845-05000-1
 
 # Netmgr
 ro.vendor.use_data_netmgrd=true
-
-# NFC
-ro.nfc.port=I2C
 
 # QC framework value-adds
 ro.vendor.qti.va_aosp.support=1
@@ -92,7 +79,6 @@ telephony.lteOnCdmaDevice=1
 persist.vendor.radio.atfwd.start=true
 
 # Rmnet data
-persist.rmnet.data.enable=true
 persist.data.wda.enable=true
 persist.data.df.dl_mode=5
 persist.data.df.ul_mode=5
@@ -105,11 +91,7 @@ persist.data.df.dev_name=rmnet_usb0
 # Sensors
 persist.vendor.sensors.enable.mag_filter=true
 
-# Time
-persist.timed.enable=true
-
 # Wifi
-config.disable_rtt=true
 wifi.interface=wlan0
 
 # ZRAM writeback
