@@ -482,6 +482,9 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.qti
 
+# Treble
+PRODUCT_USE_VNDK_OVERRIDE := true
+
 # Touchscreen
 PRODUCT_PACKAGES += \
     libtinyxml2
