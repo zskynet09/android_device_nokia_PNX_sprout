@@ -439,6 +439,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     telephony-ext
 
+# Treble
+PRODUCT_USE_VNDK_OVERRIDE := true
+
 # Trust
 PRODUCT_PACKAGES += \
     vendor.lineage.trust@1.0-service
