@@ -58,6 +58,9 @@ function blob_fixup() {
         product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml | product/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml)
             sed -i 's/version="2.0"/version="1.0"/g' "${2}"
             ;;
+        vendor/etc/nfcee_access.xml)
+            sed -i -e 's|xliff=\"urn:oasis:names:tc:xliff:document:1.2|android=\"http:\/\/schemas.android.com\/apk\/res\/android|' "${2}"
+            ;;
     esac
 }
 
