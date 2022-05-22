@@ -73,6 +73,7 @@ ro.vendor.qti.va_aosp.support=1
 DEVICE_PROVISIONED=1
 persist.data.tcp_rst_drop=true
 persist.env.fastdorm.enabled=true
+persist.sys.fflag.override.settings_provider_model=false
 persist.radio.adb_log_on=3
 persist.radio.flexmap_type=nw_mode
 persist.radio.oem_socket=true
