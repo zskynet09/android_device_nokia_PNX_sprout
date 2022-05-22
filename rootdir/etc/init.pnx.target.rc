@@ -106,6 +106,14 @@ on property:persist.vendor.qdcm.uninstall=1
     rm /data/vendor/display/disp_user_calib_data_hx83112_ctc_fhd_video_mode_dsi_panel.xml
     rm /data/vendor/display/disp_user_calib_data_nt36672a_ctc_fhd_video_mode_dsi_panel.xml
 
+on property:ro.boot.simslot=1
+    setprop persist.radio.multisim.config ssss
+    setprop ro.telephony.default_network 22
+
+on property:ro.boot.simslot=2
+    setprop persist.radio.multisim.config dsds
+    setprop ro.telephony.default_network 33,33
+
 service nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service.sec
     class hal
     user nfc
