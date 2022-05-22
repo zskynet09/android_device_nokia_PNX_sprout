@@ -80,6 +80,10 @@ on zygote-start
 
     write /sys/class/net/wlan0/mtu 1500
 
+on property:ro.boot.simslot=1
+    setprop persist.radio.multisim.config ssss
+    setprop ro.telephony.default_network 22
+
 service nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service.sec
     class hal
     user nfc
