@@ -441,7 +441,6 @@ on property:persist.vendor.sys.rawdump_copy=0
     write /sys/kernel/dload/emmc_dload 0
 
 on property:sys.boot_completed=1
-    write /dev/kmsg "Boot completed "
     #Reset read ahead for dm-0 and dm-1 to 512kb
     write /sys/block/dm-0/queue/read_ahead_kb 512
     write /sys/block/dm-1/queue/read_ahead_kb 512
@@ -450,6 +449,11 @@ on property:sys.boot_completed=1
     chown media audio /sys/kernel/wcd_cpe0/fw_name
     #Reinit lmkd to reconfigure lmkd properties
     setprop lmkd.reinit 1
+
+    start qcom-post-boot
+    start qti-testscripts
+
+    write /dev/kmsg "Boot completed "
 
 on property:persist.vendor.radio.atfwd.start=false
     stop vendor.atfwd
@@ -661,9 +665,6 @@ service qti-testscripts /system/bin/sh /product/etc/init.qcom.testscripts.sh
     oneshot
     seclabel u:r:qti-testscripts:s0
 
-on property:sys.boot_completed=1
-    start qcom-post-boot
-    start qti-testscripts
 
 on property:ro.vendor.ril.mbn_copy_completed=1
     write /data/vendor/radio/copy_complete 1
