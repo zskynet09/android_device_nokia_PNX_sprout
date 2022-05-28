@@ -70,6 +70,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/goodix_fp.kl:system/usr/keylayout/goodix_fp.kl \
     $(LOCAL_PATH)/configs/keylayout/goodix_fp.kl:system/usr/keylayout/uinput-egis.kl \
 
+# Media
+PRODUCT_PACKAGES += \
+    libavservices_minijail \
+
 # Net
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
