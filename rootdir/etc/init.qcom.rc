@@ -1,2 +1,10 @@
 on init
     mount none /system/lib/modules/wlan.ko /vendor/lib/modules/qca_cld3_wlan.ko bind
+
+on property:ro.boot.simslot=1
+    setprop persist.radio.multisim.config ssss
+    setprop ro.telephony.default_network 22
+
+on property:ro.boot.simslot=2
+    setprop persist.radio.multisim.config dsds
+    setprop ro.telephony.default_network 33,33
