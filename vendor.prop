@@ -152,6 +152,7 @@ ro.vendor.iocgrp.config=1
 
 # Media
 debug.stagefright.omx_default_rank=0
+media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 vendor.mm.enable.qcom_parser=16777215
 
 # Navigation
