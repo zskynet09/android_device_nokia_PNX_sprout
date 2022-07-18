@@ -1,3 +1,6 @@
+# FIH Partitions
+type fih_partition, dev_type;
+
 # Fingerprint
 type etsd_device, dev_type;
 type goodix_device, dev_type;
