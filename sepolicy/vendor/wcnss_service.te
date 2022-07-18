@@ -1,0 +1,1 @@
+allow wcnss_service kmsg_device:chr_file getattr;

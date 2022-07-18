@@ -1,0 +1,2 @@
+allow fsck fsck:capability kill;
+allow fsck overlayfs_file:dir getattr;

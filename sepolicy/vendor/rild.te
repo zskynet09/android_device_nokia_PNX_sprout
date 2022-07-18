@@ -1,0 +1,1 @@
+allow rild vendor_data_file:file { getattr open read };
