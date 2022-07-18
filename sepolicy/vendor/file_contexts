@@ -22,6 +22,13 @@
 /dev/block/platform/soc/7c4000.sdhci/by-name/systeminfo_[ab]    u:object_r:custom_ab_block_device:s0
 /dev/block/platform/soc/7c4000.sdhci/by-name/zplash_[ab]        u:object_r:custom_ab_block_device:s0
 
+# Partitions (non-A/B)
+/dev/block/platform/soc/7c4000.sdhci/by-name/deviceinfo    u:object_r:fih_partition:s0
+/dev/block/platform/soc/7c4000.sdhci/by-name/box           u:object_r:fih_partition:s0
+/dev/block/platform/soc/7c4000.sdhci/by-name/securefs      u:object_r:fih_partition:s0
+/dev/block/platform/soc/7c4000.sdhci/by-name/mfd           u:object_r:fih_partition:s0
+/dev/block/platform/soc/7c4000.sdhci/by-name/chromatix     u:object_r:fih_partition:s0
+
 # Power HAL
 /(vendor|system/vendor)/bin/hw/android\.hardware\.power\.stats@1\.0-service\.mock        u:object_r:hal_power_stats_default_exec:s0
 
