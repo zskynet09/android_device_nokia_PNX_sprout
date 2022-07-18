@@ -84,3 +84,4 @@ TARGET_RECOVERY_FSTAB := device/nokia/Phoenix/rootdir/etc/recovery.fstab
 
 # Sepolicy
 include device/qcom/sepolicy/SEPolicy.mk
+TARGET_USES_PREBUILT_VENDOR_SEPOLICY := true
