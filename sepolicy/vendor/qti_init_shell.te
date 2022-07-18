@@ -1,0 +1,11 @@
+dontaudit qti_init_shell self:capability dac_override;
+
+allow qti_init_shell vendor_data_file:dir create_dir_perms;
+allow qti_init_shell vendor_data_file:file create_file_perms;
+
+allow qti_init_shell proc_extra_free_kbytes:file { open write };
+
+# For configfs permission
+allow qti_init_shell configfs:dir create_dir_perms;
+allow qti_init_shell configfs:file create_file_perms;
+allow qti_init_shell configfs:lnk_file create_file_perms;
