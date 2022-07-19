@@ -95,6 +95,11 @@ sys.fflag.override.settings_seamless_transfer=true
 # Sensors
 persist.vendor.sensors.enable.mag_filter=true
 
+# SurfaceFlinger
+ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
+ro.surface_flinger.max_frame_buffer_acquired_buffers=3
+ro.surface_flinger.max_virtual_display_dimension=4096
+
 # Voice assistant
 ro.opa.device_model_id=camera-880e6-nokia-8.1-rg4bqo
 
