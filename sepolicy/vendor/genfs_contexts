@@ -7,6 +7,18 @@ genfscon proc /bandinfo            u:object_r:proc_bandinfo:s0
 # /proc/AllHWLis/* - Gestures
 genfscon proc /AllHWList/tp_double_tap   u:object_r:proc_fih:s0
 
+# /proc/AllHWLis/LCM0/* - Display
+genfscon proc /AllHWList/LCM0/color_temperature   u:object_r:proc_fih:s0
+genfscon proc /AllHWList/LCM0/CABC_settings       u:object_r:proc_fih:s0
+genfscon proc /AllHWList/LCM0/awer_status         u:object_r:proc_fih:s0
+genfscon proc /AllHWList/LCM0/color_mode          u:object_r:proc_fih:s0
+genfscon proc /AllHWList/LCM0/awer_cnt            u:object_r:proc_fih:s0
+genfscon proc /AllHWList/LCM0/fs_curr             u:object_r:proc_fih:s0
+genfscon proc /AllHWList/LCM0/panelid             u:object_r:proc_fih:s0
+genfscon proc /AllHWList/LCM0/glance              u:object_r:proc_fih:s0
+genfscon proc /AllHWList/LCM0/AOD                 u:object_r:proc_fih:s0
+genfscon proc /AllHWList/LCM0/hbm                 u:object_r:proc_fih:s0
+
 # /proc/hwmodel - Model
 genfscon proc /hwmodel            u:object_r:proc_fih:s0
 
