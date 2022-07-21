@@ -163,7 +163,6 @@ ro.vendor.use_data_netmgrd=true
 persist.vendor.data.iwlan.enable=true
 
 # NFC
-ro.boot.nfc=sec
 ro.hardware.nfc_nci=sec
 
 # Perf
