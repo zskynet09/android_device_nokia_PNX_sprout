@@ -68,6 +68,9 @@ ro.netflix.bsp_rev=Q670-14477-1
 # QC framework value-adds
 ro.vendor.qti.va_aosp.support=1
 
+# Perf
+vendor.perf.gestureflingboost.enable=true
+
 # Radio
 DEVICE_PROVISIONED=1
 persist.data.tcp_rst_drop=true
