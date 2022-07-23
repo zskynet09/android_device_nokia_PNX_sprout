@@ -47,3 +47,6 @@
 
 # Sensors
 /vendor/bin/init\.sensor\.e2pwrite\.sh	        u:object_r:sensors_e2p_exec:s0
+
+# smcinvoke
+/dev/smcinvoke                                  u:object_r:vendor_smcinvoke_device:s0
