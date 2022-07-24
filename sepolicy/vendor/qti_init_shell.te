@@ -12,3 +12,7 @@ allow qti_init_shell configfs:lnk_file create_file_perms;
 
 # Sysfs
 allow qti_init_shell { sysfs sysfs_leds }:file setattr;
+
+# FIH RFS
+allow qti_init_shell rfs_shared_hlos_file:dir create_dir_perms;
+allow qti_init_shell rfs_shared_hlos_file:file create_file_perms;

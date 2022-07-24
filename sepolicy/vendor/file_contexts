@@ -3,6 +3,10 @@
 /firmware(/.*)?                                 u:object_r:firmware_file:s0
 /persist                                        u:object_r:mnt_vendor_file:s0
 
+# FIH RFS
+/data/vendor/fih_atl(/.*)?                                 u:object_r:rfs_shared_hlos_file:s0
+/data/vendor/fih_mcfg(/.*)?                                u:object_r:rfs_shared_hlos_file:s0
+
 # Fingerprint
 /dev/esfp0                          u:object_r:etsd_device:s0
 /dev/goodix_fp                      u:object_r:goodix_device:s0
