@@ -3,3 +3,7 @@ dontaudit qti_init_shell self:capability dac_override;
 # For configfs permission
 allow qti_init_shell configfs:dir create_dir_perms;
 allow qti_init_shell configfs:file create_file_perms;
+
+# FIH RFS
+allow qti_init_shell rfs_shared_hlos_file:dir create_dir_perms;
+allow qti_init_shell rfs_shared_hlos_file:file create_file_perms;

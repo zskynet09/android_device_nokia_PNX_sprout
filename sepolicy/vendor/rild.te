@@ -1,1 +1,5 @@
 allow rild proc_bandinfo:file r_file_perms;
+
+# FIH RFS
+allow rild rfs_shared_hlos_file:dir create_dir_perms;
+allow rild rfs_shared_hlos_file:file create_file_perms;
