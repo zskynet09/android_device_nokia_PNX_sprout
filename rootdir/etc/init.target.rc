@@ -152,6 +152,7 @@ on charger
 
     start vendor.hvdcp_opti
     setprop sys.usb.configfs 1
+    start vendor.power_off_alarm
 
 service thermal-engine /system/vendor/bin/thermal-engine
    class main
