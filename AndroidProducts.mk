@@ -1,7 +1,7 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_Phoenix.mk
+    $(LOCAL_DIR)/arrow_Phoenix.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_Phoenix-user \
-    lineage_Phoenix-userdebug \
-    lineage_Phoenix-eng
+    arrow_Phoenix-user \
+    arrow_Phoenix-userdebug \
+    arrow_Phoenix-eng
