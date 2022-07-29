@@ -25,6 +25,7 @@ PRODUCT_PACKAGES += \
     audio.primary.sdm710 \
     audio.r_submix.default \
     audio.usb.default \
+    libaudio-resampler \
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
