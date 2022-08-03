@@ -72,7 +72,7 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth.audio@2.0-impl \
+    android.hardware.bluetooth.audio@2.1-impl \
     audio.bluetooth.default \
     com.qualcomm.qti.bluetooth_audio@1.0 \
     libbtconfigstore \
