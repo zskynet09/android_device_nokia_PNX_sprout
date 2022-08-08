@@ -198,6 +198,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# Treble
+PRODUCT_USE_VNDK_OVERRIDE := true
+
 # Update Engine
 PRODUCT_PACKAGES += \
     update_engine \
