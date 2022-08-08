@@ -103,8 +103,5 @@ VENDOR_SECURITY_PATCH := 2021-05-01
 # Sepolicy
 include device/qcom/sepolicy/SEPolicy.mk
 
-# VNDK
-BOARD_VNDK_VERSION := current
-
 # Inherit from the proprietary version
 include vendor/nokia/PNX_sprout/BoardConfigVendor.mk
