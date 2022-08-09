@@ -102,6 +102,7 @@ VENDOR_SECURITY_PATCH := 2021-05-01
 include device/qcom/sepolicy/SEPolicy.mk
 
 # Treble
+PRODUCT_FULL_TREBLE_OVERRIDE := true
 PRODUCT_VENDOR_MOVE_ENABLED := true
 
 -include vendor/nokia/Phoenix/BoardConfigVendor.mk
