@@ -32,6 +32,7 @@ PRODUCT_PACKAGES += \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libtinycompress \
+    libvolumelistener \
 
 PRODUCT_PACKAGES += \
     liba2dpoffload \
