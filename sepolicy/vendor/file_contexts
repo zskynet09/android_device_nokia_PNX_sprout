@@ -3,6 +3,9 @@
 /firmware(/.*)?                                 u:object_r:firmware_file:s0
 /persist                                        u:object_r:mnt_vendor_file:s0
 
+# ADSP
+/sys/firmware/devicetree/base/soc/fih_info/fih-info,baseband          u:object_r:sysfs_fih:s0
+
 # FIH RFS
 /data/vendor/fih_atl(/.*)?                                 u:object_r:rfs_shared_hlos_file:s0
 /data/vendor/fih_mcfg(/.*)?                                u:object_r:rfs_shared_hlos_file:s0

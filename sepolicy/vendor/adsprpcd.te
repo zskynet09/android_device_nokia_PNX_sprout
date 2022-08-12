@@ -1,0 +1,1 @@
+allow adsprpcd sysfs_fih:file r_file_perms;

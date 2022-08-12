@@ -4,6 +4,9 @@ type proc_fih, fs_type, proc_type;
 # /proc/bandinfo
 type proc_bandinfo, proc_type, fs_type;
 
+# ADSP
+type sysfs_fih, sysfs_type, fs_type;
+
 # Adsprpcd
 type public_adsprpcd_file, file_type;
 
