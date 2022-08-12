@@ -9,6 +9,9 @@ allow sensors_e2p vendor_toolbox_exec:file rx_file_perms;
 # Allow sensors_e2p to search in mnt_vendor_file directory
 allow sensors_e2p mnt_vendor_file:dir search;
 
+# Allow sensor_e2p to read mfd partition
+allow sensors_e2p fih_partition:blk_file { read getattr open setattr };
+
 # Allow sensors_e2p to read and write to sensors_persist_file
 allow sensors_e2p sensors_persist_file:dir create_dir_perms;
 allow sensors_e2p sensors_persist_file:file create_file_perms;
