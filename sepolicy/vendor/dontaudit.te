@@ -1,0 +1,8 @@
+# please don't kill yourself unless it's allowed
+dontaudit { fsck toolbox vdc zygote } self:capability kill;
+
+# untrusted_app shouldn't be allowed to read SELinux status
+dontaudit untrusted_app_all selinuxfs:file read;
+
+# all other no-context attempt by apps (as spotted on iQIYI)
+dontaudit untrusted_app_all sysfs_net:dir search;
