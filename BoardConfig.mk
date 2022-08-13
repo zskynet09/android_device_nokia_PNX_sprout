@@ -153,6 +153,12 @@ VENDOR_SECURITY_PATCH := 2021-05-01
 # Sepolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 
+# Symlinks
+BOARD_ROOT_EXTRA_SYMLINKS := \
+    /vendor/bt_firmware:/bt_firmware \
+    /vendor/firmware_mnt:/firmware \
+    /vendor/dsp:/dsp \
+
 # Treble
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 PRODUCT_VENDOR_MOVE_ENABLED := true
