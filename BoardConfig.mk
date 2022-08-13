@@ -170,6 +170,7 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
     /vendor/bt_firmware:/bt_firmware \
     /vendor/firmware_mnt:/firmware \
     /vendor/dsp:/dsp \
+    /mnt/vendor/persist:/persist
 
 # Treble
 PRODUCT_FULL_TREBLE_OVERRIDE := true
