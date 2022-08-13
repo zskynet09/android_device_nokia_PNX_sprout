@@ -118,6 +118,8 @@ ro.crypto.volume.filenames_mode=aes-256-cts
 persist.sys.sf.native_mode=0
 ro.vendor.display.cabl=2
 vendor.display.enable_default_color_mode=1
+vendor.display.qdcm.disable_factory_mode=1
+vendor.display.qdcm.mode_combine=1
 
 # DPM
 persist.vendor.dpmhalservice.enable=1
