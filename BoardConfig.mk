@@ -165,6 +165,8 @@ VENDOR_SECURITY_PATCH := 2021-12-01
 # Sepolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+
 # Symlinks
 BOARD_ROOT_EXTRA_SYMLINKS := \
     /vendor/bt_firmware:/bt_firmware \
