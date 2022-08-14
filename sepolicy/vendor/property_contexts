@@ -11,3 +11,5 @@ sys.fp.vid                      u:object_r:vendor_fp_prop:s0
 
 # Radio
 persist.vendor.data.qmipriod_load        u:object_r:vendor_radio_prop:s0
+ro.product.ril.nickname                  u:object_r:vendor_default_prop:s0
+ro.product.ril.model.display             u:object_r:vendor_default_prop:s0
