@@ -1,6 +1,7 @@
 # Audio
 audio.                           u:object_r:audio_prop:s0
 persist.smartamp.                u:object_r:audio_prop:s0
+audio_hal.in_period_size         u:object_r:vendor_audio_prop:s0
 
 # Camera
 persist.vendor.camera.     u:object_r:camera_prop:s0
