@@ -1,2 +1,5 @@
 # Fingerprint
 type vendor_fp_prop, property_type;
+
+# Perf
+type vendor_perf_prop, property_type;
