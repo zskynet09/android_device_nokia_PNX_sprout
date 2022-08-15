@@ -520,6 +520,7 @@
 
          @see https://www.w3.org/TR/SVG/paths.html#PathData
          -->
+    <bool name="config_fillMainBuiltInDisplayCutout">true</bool>
     <string translatable="false" name="config_mainBuiltInDisplayCutout">M315,0c-16.7,0-31.6,10.4-37.3,26.1l-8.5,23.3C261.5,72.4,240.4,86,217.1,86H-217.1 c-23.3,0-44.7-14.7-52.2-36.6l-8.5-23.3C-283.4,10.4,-298.3,0,-315,0H315z</string>
 
     <!-- Flag indicating whether the surface flinger has limited
