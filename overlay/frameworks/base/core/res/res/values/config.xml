@@ -567,4 +567,7 @@
          we only enabled it while the device has ability of mixed color spaces composition -->
     <bool name="config_enableWcgMode">true</bool>
 
+    <!-- Whether or not we should show the option to show battery percentage -->
+    <bool name="config_battery_percentage_setting_available">false</bool>
+
 </resources>
