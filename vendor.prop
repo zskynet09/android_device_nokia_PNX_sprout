@@ -140,6 +140,9 @@ vendor.hw.fm.init=0
 persist.backup.ntpServer=0.pool.ntp.org
 
 # Graphics
+debug.hwui.renderer=skiagl
+debug.renderengine.backend=skiaglthreaded
+renderthread.skia.reduceopstasksplitting=true
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 ro.opengles.version=196610
