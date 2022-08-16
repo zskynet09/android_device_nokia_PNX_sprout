@@ -715,7 +715,6 @@ else
                 echo 314572 > /sys/module/lowmemorykiller/parameters/vmpressure_file_min
                 echo 51200 > /proc/sys/vm/extra_free_kbytes
                 echo 0,100,200,300,800,906 > /sys/module/lowmemorykiller/parameters/adj
-                setprop ro.vendor.qti.sys.fw.bg_apps_limit 60
             else
                 echo "18432,23040,27648,32256,55296,80640" > /sys/module/lowmemorykiller/parameters/minfree
                 # echo 80640 > /sys/module/lowmemorykiller/parameters/vmpressure_file_min
@@ -726,7 +725,6 @@ else
                 echo 250000 > /sys/module/lowmemorykiller/parameters/vmpressure_file_min
                 echo 51200 > /proc/sys/vm/extra_free_kbytes
                 echo 0,100,200,300,800,906 > /sys/module/lowmemorykiller/parameters/adj
-                setprop ro.vendor.qti.sys.fw.bg_apps_limit 60
             else
                 echo "18432,23040,27648,32256,55296,80640" > /sys/module/lowmemorykiller/parameters/minfree
                 echo 80640 > /sys/module/lowmemorykiller/parameters/vmpressure_file_min
