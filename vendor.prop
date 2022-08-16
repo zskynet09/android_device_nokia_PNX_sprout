@@ -169,6 +169,9 @@ persist.vendor.data.iwlan.enable=true
 # NFC
 ro.hardware.nfc_nci=sec
 
+# Perf
+ro.vendor.extension_library=libqti-perfd-client.so
+
 # Power
 vendor.power.pasr.enabled=true
 
