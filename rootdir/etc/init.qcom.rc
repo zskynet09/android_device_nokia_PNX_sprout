@@ -398,6 +398,9 @@ on property:sys.boot_completed=1
 
     start qcom-post-boot
 
+    # Restrict permissions to socket file to hide Magisk & co.
+    chmod 440 /proc/net/unix
+
     write /dev/kmsg "Boot completed "
 
 on property:persist.vendor.radio.atfwd.start=false
