@@ -2,8 +2,9 @@
 <resources>
 
     <!-- Height of the status bar -->
+    <dimen name="status_bar_height">86.0px</dimen>
     <dimen name="status_bar_height_portrait">86.0px</dimen>
-    <dimen name="status_bar_height_landscape">24.0dip</dimen>
+    <dimen name="status_bar_height_landscape">86.0px</dimen>
 
     <!-- Radius of the software rounded corners at the top of the display in its natural
         orientation. If zero, the value of rounded_corner_radius is used. -->
