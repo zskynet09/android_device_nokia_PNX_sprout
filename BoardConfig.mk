@@ -55,6 +55,8 @@ TARGET_KERNEL_SOURCE := kernel/nokia/sdm710
 TARGET_KERNEL_CONFIG := pnx-perf_defconfig
 TARGET_KERNEL_VERSION := 4.9
 BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/prebuilt/modules/modules.load))
+TARGET_KERNEL_ADDITIONAL_FLAGS += \
+    HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
