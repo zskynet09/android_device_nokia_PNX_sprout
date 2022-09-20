@@ -69,6 +69,10 @@ function blob_fixup() {
         system_ext/lib64/lib-imsvideocodec.so)
             "${PATCHELF}" --add-needed "libshim_imsvideocodec.so" "${2}"
             ;;
+        vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so|vendor/lib64/vendor.egistec.hardware.fingerprint@2.0.so)
+            "${PATCHELF}" --remove-needed "libhidlbase.so" "${2}"
+            sed -i "s/libhidltransport.so/libhidlbase-v32.so\x00/" "${2}"
+            ;;
     esac
 }
 
