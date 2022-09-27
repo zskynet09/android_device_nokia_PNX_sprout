@@ -122,6 +122,7 @@ persist.vendor.dpmhalservice.enable=1
 
 # DRM
 drm.service.enabled=true
+media.mediadrmservice.enable=true
 ro.com.widevine.cachesize=16777216
 
 # Dex
