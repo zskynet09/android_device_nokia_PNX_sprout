@@ -47,7 +47,6 @@ persist.vendor.ims.disableQXDMLogs=1
 ro.logd.kernel=true
 
 # Media
-qcom.hw.aac.encoder=true
 debug.stagefright.ccodec=1
 media.stagefright.enable-player=true
 media.stagefright.enable-http=true
