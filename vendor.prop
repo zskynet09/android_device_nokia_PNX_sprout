@@ -100,9 +100,6 @@ ro.vendor.bluetooth.wipower=false
 ro.vendor.bt.bdaddr_path=/proc/bt_mac
 vendor.qcom.bluetooth.soc=cherokee
 
-# Camera
-camera.panorama.quality=high
-
 # Crypto
 ro.crypto.allow_encrypt_override=true
 ro.crypto.set_dun=true
