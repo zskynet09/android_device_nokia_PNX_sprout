@@ -143,6 +143,7 @@ persist.backup.ntpServer=0.pool.ntp.org
 debug.hwui.renderer=skiagl
 debug.renderengine.backend=skiaglthreaded
 debug.sf.disable_client_composition_cache=1
+debug.sf.enable_gl_backpressure=1
 renderthread.skia.reduceopstasksplitting=true
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
