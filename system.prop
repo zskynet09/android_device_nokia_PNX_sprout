@@ -22,6 +22,9 @@ persist.vendor.data.mode=concurrent
 # Dalvik dex2oat
 dalvik.vm.dex2oat64.enabled=true
 
+# Disable Skia tracing by default
+debug.hwui.skia_atrace_enabled=false
+
 # GPS
 persist.vendor.overlay.izat.optin=rro
 persist.backup.ntpServer="0.pool.ntp.org"
