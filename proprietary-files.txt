@@ -203,8 +203,6 @@ vendor/lib/libcapiv2svacnn.so
 vendor/lib/libcapiv2vop.so
 vendor/lib/libcom.qti.chinodeutils.so
 vendor/lib/libcvimage_api.so
-vendor/lib/libmegface-new.so
-vendor/lib/libMegviiFacepp.so
 vendor/lib/libMGBeauty.so
 vendor/lib/libmorpho_hdr_checker.so
 vendor/lib/libmpbase.so
@@ -321,7 +319,6 @@ vendor/lib64/camera/components/libdepthmapwrapper.so
 vendor/etc/camera/arcsoft_calibration.bin
 vendor/etc/camera/camxoverridesettings.txt
 vendor/etc/camera/license.lic
-vendor/etc/camera/megviifacepp_model
 vendor/etc/camera/mgbeautify_1_2_4_model
 vendor/etc/camera/M_Classify_Cnn_5.3.5.model.hardcode
 

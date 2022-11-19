@@ -61,6 +61,11 @@ function blob_fixup() {
         vendor/etc/nfcee_access.xml)
             sed -i -e 's|xliff=\"urn:oasis:names:tc:xliff:document:1.2|android=\"http:\/\/schemas.android.com\/apk\/res\/android|' "${2}"
             ;;
+        vendor/lib/hw/camera.qcom.so | vendor/lib64/hw/camera.qcom.so)
+            "${PATCHELF}" --remove-needed "libMegviiFacepp.so" "${2}"
+            "${PATCHELF}" --remove-needed "libmegface-new.so" "${2}"
+            "${PATCHELF}" --add-needed "libshim_megvii.so" "${2}"
+            ;;
     esac
 }
 
