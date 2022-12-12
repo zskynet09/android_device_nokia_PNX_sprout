@@ -361,9 +361,6 @@ vendor/etc/camera/M_Classify_Cnn_5.3.5.model.hardcode
 # Camera (Firmware)
 vendor/firmware/CAMERA_ICP.elf
 
-# Charger
-vendor/bin/hvdcp_opti
-
 # CDSP
 vendor/bin/cdsprpcd
 vendor/etc/init/vendor.qti.cdsprpc-service.rc
