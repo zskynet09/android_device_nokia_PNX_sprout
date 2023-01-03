@@ -24,3 +24,6 @@
 /dev/block/bootdevice/by-name/hidden     /vendor/hidden            ext4   ro,nosuid,nodev,barrier=1,context=u:object_r:hidden_files:s0                       wait,slotselect,formattable
 /dev/block/bootdevice/by-name/cda        /vendor/hidden/data       ext4   noatime,nosuid,nodev,barrier=1,context=u:object_r:cda_settings_files:s0                 wait,slotselect,formattable
 /dev/block/bootdevice/by-name/securefs   /vendor/securefs          ext4   noatime,nosuid,nodev,barrier=1,context=u:object_r:persist_drm_file:s0                   wait,formattable
+
+# ZRAM
+/dev/block/zram0                         none                      swap   defaults                 zramsize=50%
