@@ -83,6 +83,9 @@ AB_OTA_PARTITIONS += \
     vendor \
     vbmeta
 
+# Assert
+TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
+
 # Audio
 AUDIO_FEATURE_ENABLED_AAC_ADTS_OFFLOAD := true
 AUDIO_FEATURE_ENABLED_AUDIOSPHERE := true
