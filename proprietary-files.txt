@@ -944,7 +944,6 @@ vendor/lib64/libstagefright_soft_qtiflacdec.so
 
 # NFC
 vendor/bin/hw/android.hardware.nfc@1.2-service.sec
-vendor/bin/nqnfcinfo
 vendor/bin/sec_nfc_test
 vendor/etc/init/android.hardware.nfc@1.2-service.sec.rc
 vendor/etc/libnfc-mtp-NQ3XX.conf
