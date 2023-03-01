@@ -130,3 +130,6 @@ ro.zram.periodic_wb_delay_hours=24
 
 # Don't write binary XML files
 persist.sys.binary_xml=false
+
+#Disable MTE Async for system server
+arm64.memtag.process.system_server=off
