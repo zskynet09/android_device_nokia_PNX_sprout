@@ -116,6 +116,8 @@ ro.crypto.volume.filenames_mode=aes-256-cts
 # Display
 debug.egl.hw=1
 debug.sf.hw=1
+persist.sys.sf.color_mode=7
+persist.sys.sf.color_saturation=1.0
 persist.sys.sf.native_mode=0
 ro.vendor.display.cabl=2
 vendor.display.enable_default_color_mode=1
