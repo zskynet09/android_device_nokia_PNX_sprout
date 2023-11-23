@@ -43,6 +43,7 @@
 /dev/block/platform/soc/7c4000\.sdhci/by-name/securefs      u:object_r:fih_partition:s0
 /dev/block/platform/soc/7c4000\.sdhci/by-name/mfd           u:object_r:fih_partition:s0
 /dev/block/platform/soc/7c4000\.sdhci/by-name/chromatix     u:object_r:fih_partition:s0
+/dev/block/platform/soc/7c4000\.sdhci/by-name/logdump       u:object_r:metadata_block_device:s0
 
 # Power HAL
 /(vendor|system/vendor)/bin/hw/android\.hardware\.power\.stats@1\.0-service\.mock        u:object_r:hal_power_stats_default_exec:s0
