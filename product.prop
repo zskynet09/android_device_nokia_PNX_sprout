@@ -1,0 +1,6 @@
+audio.offload.min.duration.secs=30
+audio.sys.noisy.broadcast.delay=600
+audio.sys.offload.pstimeout.secs=3
+camera.disable_zsl_mode=1
+camera.panorama.quality=high
+ro.opa.eligible_device=true
